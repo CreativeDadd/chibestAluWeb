@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
 }
 
 .nav-bar {
@@ -108,4 +107,10 @@ body {
 }
 hr{
     width: 150px;
+}
+
+.logo-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }
