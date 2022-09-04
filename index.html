@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compactible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      src="https://kit.fontawesome.com/9d88e91102.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images\large logo.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chibestalu</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compactible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/9d88e91102.js" crossorigin="anonymous"></script>
-  <title>Chibestalu</title>
-</head>
-
-<body>
-  <!-- color theme: "blue, red, white" -->
-  <header class="showcase">
-    <nav class="nav-bar">
-      <img src="images\large logo.png" alt="logo-img" class="logo-img">
+  <body>
+    <main>
+    <!-- color theme: "blue, red, white" -->
+    <nav class="navbar" id="nav-bar">
+      <a class="logo-anchor" href="#home"
+        ><img
+          src="images\large logo.png"
+          alt="logo-img"
+          id="logo-img"
+          class="logo-img"
+        />
+        <h4 style="color: #fff">
+          <span Style="color: #DD0004; font-size: 1.3rem;">DonJiokeson</span
+          >Investment Ltd.
+        </h4>
+      </a>
       <!-- <a class="logo-1" href="#home"><span class="span-1 span-logo"></span><span class="span-2 span-logo"></span><span class="span-d">D</span>IL</a> -->
-      <ul class="bar-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our Products</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+      <!-- armburger menu -->
+      <div id="menu-icon" class="menu-togle menu-close" >
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </div>
+
+      <div class="navlistdiv">
+        <ul id="nav-ul" class="navlist">
+          <li class="active-link"><a href="#">Home</a></li>
+          <li><a href="#container_our_product">Products</a></li>
+          <li><a href="#our-services">Services</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <!-- <li><a href="#">Contact Us</a></li> -->
+        </ul>
+      </div>
       <div class="top_contact">
-        <p class="txt_email"><i class="fa-solid fa-envelope"></i>dil@gmail.com</p>
-        <p class="t_phone"><i class="fa-solid fa-phone"></i><a href="tel:07062080855">07062080855</a></p>
+        <p class="txt_email">
+          <i class="fa-solid fa-envelope"></i>dil@gmail.com
+        </p>
+        <p class="t_phone">
+          <i class="fa-solid fa-phone"></i
+          ><a href="tel:07062080855">07062080855</a>
+        </p>
       </div>
     </nav>
 
+    <!-- slidders container -->
+    <div class="slider-container" id="slider_wrapper">
+      <!---------- slider1 ---------->
+      <div class="slider_one">
+        <!-- slider chevron -->
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
 
-    <main>
-      <div class="slider-cont" id="slider_wrapper">
+        <h1>You Can Bank on Us.</h1>
+        <ul>
+          <h2>Do you need quality:</h2>
+          <li>Corugated Aluminum Roofing Sheets?</li>
+          <li>Roofing Gutters</li>
+          <li>Beautiful P.O.P?</li>
+          <li>Roofing Accessories?</li>
+          <li>Roofing Professionals?</li>
+        </ul>
+        <p>
+          Our prices are very affordable and negotiable. We value our customers
+          satisfaction above any business asset and above any thing. Our
+          experience in roofing materials place us in the best light before all
+          our clients.
+        </p>
 
-        <!---------- slider1 ---------->
-        <div class="slider_one">
-          <!-- slider chevron -->
-          <i class="fa-solid fa-chevron-left"></i>
-          <i class="fa-solid fa-chevron-right"></i>
-
-          <h1>You Can Bank on Us.</h1>
-          <ul>
-            <h2>Do you need quality:</h2>
-            <li>Corugated Aluminum Roofing Sheets?</li>
-            <li>Roofing Gutters</li>
-            <li>Beautiful P.O.P?</li>
-            <li>Roofing Accessories?</li>
-            <li>Roofing Professionals?</li>
-          </ul>
-          <p>
-            Our prices are very affordable and negotiable.
-            We value our customers satisfaction above any business asset and
-            above any thing. Our experience in roofing materials place us in
-            the best light before all our clients.
-          </p>
-
-          <div class="hero-btn-div">
+        <!-- <div class="hero-btn-div">
             <button id="our-product" class="btn-cta action-btn">Order Now</button>
             <button class="btn-us action-btn"><i class="fa-brands fa-whatsapp"></i>Contact Us</button>
-          </div>
-          <div class="slider-circles">
+          </div> -->
+        <!-- <div class="slider-circles">
             <div class="dot">
               <i class="fa-solid fa-circle-dot"></i>
               <i class="fa-solid fa-circle-dot"></i>
@@ -71,206 +102,253 @@
               <i class="fa-solid fa-circle"></i>
               <i class="fa-solid fa-circle"></i>
             </div>
-          </div>
-        </div>
-        <!----------Slider 1 ends here -->
-        <div class="divider-1 divider-all">
-          <span class="span1"></span>
-          <i class="fa-solid fa-gem"></i> <span class="span2"></span>
-        </div>
-
-
-        <!-------- Slider-2 starts here --------->
-        <div class="slider_two">
-          <div class="swipe_msg_two">
-            <h1>We Know How to Do it Better.</h1>
-            <ul>
-              <h2>Do Business With Us. We Deliver and Help You Install Anyhere Nation-Wide</h2>
-              <li>You Will Get Any Kind of Gerald-Stone Roffing Tiles % Aluminum Roofing Materials directly from our
-                Factory At All Time.</li>
-              <li>You Will Get quick Response.</li>
-              <li>You Will Get Best Services & Advises for Your Roofing</li>
-              <li>You will Get all You Need to Beautifully & Quickly Complete Your Roofing Project </li>
-            </ul>
-            <p>
-              Beginning from your project planning, t0 your procurement, to your logistic and to your final installation
-              of any our Products, we will right there with you to advice support and above all to offer our
-              professional service because we know how to do it better.
-            </p>
-          </div>
-          <div class="overlay">
-            <!-- <img src="images\std-hs-beaut.jpg" alt="pro_img" /> -->
-            <div class="hero-btn-div">
-              <button id="our-product" class="btn-cta action-btn">Order Now</button>
-              <button class="btn-us action-btn"><i class="fa-brands fa-whatsapp"></i>Contact Us</button>
-            </div>
-          </div>
-
-
-        </div>
-        <!------ slide-2 ends here-------->
+          </div> -->
       </div>
-      <!---------- slide show ends here ------->
+      <!----------Slider 1 ends here -->
 
+      <!-------- Slider-2 starts here --------->
+      <div class="slider_two" id="slider-two">
+        <img src="" alt="" class="slider_img-2" />
 
-      <div class="divider-1">
-        <span class="span1"></span>
-        <i class="fa-solid fa-gem"></i> <span class="span2"></span>
-      </div>
-
-
-      <!----- Slider_three starts here----->
-      <div class="slider_three">
-
-        <div class="swipe_msg_three">
-          <h1>Your Building Project Deserves the Best Final Touch.</h1>
+        <div class="swipe_msg_two">
+          <h2>We Know How to Do it Better.</h2>
+          <h4>
+            Do Business With Us. We Sell, Deliver and Help You Install Anyhere
+            Nation-Wide
+          </h4>
+          <ul>
+            <li>
+              You Will Get Any Kind of Gerald-Stone Roffing Tiles & Aluminum
+              Roofing Materials directly from our Factory At All Time.
+            </li>
+            <li>You Will Get quick Response.</li>
+            <li>You Will Get Best Services & Advises for Your Roofing</li>
+            <li>
+              You will Get all You Need to Beautifully & Quickly Complete Your
+              Roofing Project
+            </li>
+          </ul>
           <p>
-            High Quality innovative Products and materials for all your needs in your home Luxury interrior decoration
-            and house renovations are available Nation-Wide. Wirh us Your house building works/projects deserves the
-            best final touch.
+            Beginning from your project planning, to your procurement, to your
+            logistic and to your final installation of any our Products, we will
+            right there with you to advice support and above all to offer our
+            professional service because we know how to do it better.
           </p>
         </div>
-        <div class="cta_slider_3">
-          <h3>For Detailed Estimate and Quotations:</h3>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i>WhatsApp Us</a>
+      </div>
+    </div>
+    <!------ slide-2 ends here-------->
+
+    <!----- Slider_three starts here----->
+    <div class="slider_three">
+      <div class="swipe_msg_three">
+        <h1>Your Building Project Deserves the Best Final Touch.</h1>
+        <p>
+          High Quality innovative Products and materials for all your needs in
+          your home Luxury interrior decoration and house renovations are
+          available Nation-Wide. Wirh us Your house building works/projects
+          deserves the best final touch.
+        </p>
+      </div>
+    </div>
+
+    <!-------- Our Products ----->
+    <h1>Our Products</h1>
+
+    <section class="container_our_product" id="container_our_product">
+      <div class="grid-1-wrapper">
+        <img
+          src="images\background-set.jpg"
+          alt="prod-1"
+          class="prod-1-img"
+          id="grid-img"
+        />
+        <div class="short-para">
+          <h4>Stone Tile</h4>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
+        </div>
+      </div>
+      <div class="grid-1-wrapper">
+        <img
+          src="images\corrugated-steptiles.jpg"
+          alt="prod-1"
+          class="prod-1-img"
+        />
+        <div class="short-para">
+          <h4>Stone Tile</h4>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
+        </div>
+      </div>
+      <div class="grid-1-wrapper">
+        <img src="images\pop-sealing.jpg" alt="prod-1" class="prod-1-img" />
+        <div class="short-para">
+          <h4>Stone Tile</h4>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
+        </div>
+      </div>
+      <div class="grid-1-wrapper">
+        <img
+          src="images\corrugated-span2.jpg"
+          alt="prod-1"
+          class="prod-1-img"
+        />
+        <div class="short-para">
+          <a href="">Stone Tile</a>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
         </div>
       </div>
 
-      </div>
-  </header>
-
-  <!-------- Our Products ----->
-
-  <div class="divider2 divider-all">
-    <span class="span1"></span> <i class="fa-solid fa-fire-flame-curved"></i><span class="span2"></span>
-  </div>
-  <h1>Our Products</h1>
-
-  <section class="container_our_product">
-    <div class="grid-1-wrapper">
-      <img src="images\background-set.jpg" alt="prod-1" class="prod-1-img" id="grid-img" >
-      <div class="short-para">
-        <h4>Stone Tile</h4>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
-      </div>
-    </div>
-    <div class="grid-1-wrapper">
-      <img  src="images\corrugated-steptiles.jpg" alt="prod-1" class="prod-1-img">
-      <div class="short-para">
-        <h4>Stone Tile</h4>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
-      </div>
-    </div>
-    <div class="grid-1-wrapper">
-      <img src="images\pop-sealing.jpg" alt="prod-1" class="prod-1-img">
-      <div class="short-para">
-        <h4>Stone Tile</h4>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
-      </div>
-    </div>
-    <div class="grid-1-wrapper">
-      <img src="images\corrugated-span2.jpg"  alt="prod-1" class="prod-1-img">
-      <div class="short-para">
-        <a href="">Stone Tile</a>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
-      </div>
-    </div>
-   
-    <div class="grid-1-wrapper">
-      <img  src="images\gutters-displayed.jpg"  alt="prod-1" class="prod-1-img">
-      <div class="short-para">
-        <h4>Stone Tile</h4>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
-      </div>
-    </div>
-    <div class="grid-1-wrapper">
-      <img src="images\gerad1.jpg" alt="prod-1" class="prod-1-img">
-      <div class="short-para">
-        <h4>Stone Tile</h4>
-        <div class="product-btns">
-        <button>Get Quotations</button>
-        <button>Kown The Price</button>
+      <div class="grid-1-wrapper">
+        <img
+          src="images\gutters-displayed.jpg"
+          alt="prod-1"
+          class="prod-1-img"
+        />
+        <div class="short-para">
+          <h4>Stone Tile</h4>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
         </div>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
       </div>
-    </div>
-    <div class="grid-1-wrapper">
-      <img src="images\std-hs-beauty.jpg" alt="prod-1" id=""  class="prod-1-img">
-      <div class="short-para">
-        <h4>Stone Tile</h4>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
+      <div class="grid-1-wrapper">
+        <img src="images\gerad1.jpg" alt="prod-1" class="prod-1-img" />
+        <div class="short-para">
+          <h4>Stone Tile</h4>
+          <div class="product-btns">
+            <button>Get Quotations</button>
+            <button>Kown The Price</button>
+          </div>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="grid-1-wrapper">
-      <img src="images\gerald-st-tiles.jpg" alt="prod-1" class="prod-1-img">
-      <div class="short-para">
-        <h4>Stone Tile</h4>
-        <p>
-          The easthetic beauty of gerald stone tiles roofing sheet will bring out the loxirouse looks and feels you
-          deserve for your house
-        </p>
+      <div class="grid-1-wrapper">
+        <img
+          src="images\std-hs-beauty.jpg"
+          alt="prod-1"
+          id=""
+          class="prod-1-img"
+        />
+        <div class="short-para">
+          <h4>Stone Tile</h4>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
+        </div>
       </div>
-    </div>
+      <div class="grid-1-wrapper">
+        <img src="images\gerald-st-tiles.jpg" alt="prod-1" class="prod-1-img" />
+        <div class="short-para">
+          <h4>Stone Tile</h4>
+          <p>
+            The easthetic beauty of gerald stone tiles roofing sheet will bring
+            out the loxirouse looks and feels you deserve for your house
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- -------  Our-Services  ---------- -->
+    <section class="our-services" id="our-services">
+      <ul>
+        <h1>"Our Services"</h1>
+        <li>
+          Manufactures & Sales of High Qaulity Corrugated Aluminium Roofing
+          Sheet and aluminium coils at Wholesales Prices
+        </li>
+        <li>
+          Installation of Roofs for Various Projects in any Location Nation-Wide
+        </li>
+        <li>Design, Cast and Installation of Mordern Beautiful P. O. P.</li>
+        <li>
+          We Sell and Install Roofing Stone-Tiles, Our Prices are competetive
+          and cost saving
+        </li>
+        <li>
+          Our Roof Rain Gutters are Second to None. Try Us. We have foreign made
+          Roof Rain gutter and we also craft VERY Neat and Reliable Aluminium
+          Gutters
+        </li>
+        <li>Roofing Renovations and Repairs</li>
+        <li>Accessories, Such as nails, SCrews, Gutters, Gum, etc.</li>
+      </ul>
+      <div>
+        <img src="images\std-hs-prj.jpg" alt="prj-img1" class="proj-img" />
+        <img src="images\pop-prjt-2.jpg" alt="prj-img2" class="proj-img" />
+      </div>
+    </section>
 
-  </section>
-  <!-- -------  Our-Services  ---------- -->
-  <section class="our-services">
-    <span class="span-service1"></span><h1>"Our Services"</h1><span  class="span-service1"></span>
-    <ul>
-      <li>Manufactures & Sales of Corrugated Aluminium Roofing Sheet at Wholesales Prices</li>
-      <li>Installation of Roofs for Various Projects in any Location Nation-Wide</li>
-      <li>Design, Cast and Installation of Mordern Beautiful P. O. P.</li>
-      <li>We Sell and Install Roofing Stone-Tiles, Our Prices are competetive and cost saving </li>
-      <li>Our Roof Rain Gutters are Second to None. Try Us. We have foreign made Roof Rain gutter and we also craft VERY Neat and Reliable Aluminun Gutter  </li>
-      <li>Roofing Renovations and Repairs</li>
-      <li>Accessories, Such as nails, SCrews, Gutters, Gum, etc.</li>
-    </ul> 
+    <!---------------- About Us Starts Here -------------->
+    <section class="about-us" id="about-us">
+      <h1>About Us</h1>
+      <h2>Don Jiokeson Investment Limited</h2>
+      <h3>Don Jiokeson Investment Ltd (A DIVISION OF CHUKS PATRICK LTD).</h3>
+      <p>
+        Importer and Expoter long span roofing sheets, high quality Aluminum
+        coil, Stone roof tiles, and accessories, corrugated aluminium roofings,
+        P.O.P design casting and installations. we value our customer
+        satisfaction above any asset and focus on making the best deals that
+        leaves our customers fufiled and happy. we respon to your oders ontime
+        without any delay.
+      </p>
+      <h1>Office Address</h1>
+      <h3>head Office:</h3>
+      <span>Ipaja Road, Opp Mobil Filling Station Agege, Lagos State.</span>
+      <h3>Factory Address:</h3>
+      <span>34, Oguudele Street, Oja Oba, Lagos State.</span>
+      <h3>Tel:<i class="fa-solid fa-phone"></i></h3>
+      <span>07062080855, 08124071615, 09052678720</span>
+    </section>
 
-    <img src="images\std-hs-prj.jpg" alt="prj-img1" class="proj-img1">
-    <img src="images\pop-prjt-2.jpg" alt="prj-img2" class="proj-img2">
-
-  </section>
-
-  <!---------------- About Us Starts Here -------------->
-  <section>
-    <h1>About Us</h1>
-    <h2>Don Jiokeson Investment Limited</h2>
-    <p>Don Jiokeson Investment Ltd is a division of Chikspatrics ltd, we deal on sales of corrugated aluminium roofings, gerad stone tiles, roofing accesory, P.O.P design casting and installations
-      we value our customer satisfaction above any asset and focus on making the best deals that live our customers fufiled and happy. we respon to your oders ontime, no dealays and no faking anything.
-    </p>
-
-
-
-
-  </section>
-
-
-
-
+    <!-- --------- Contact Form ---------- -->
+    <section class="form-section">
+      <form action="">
+        <label for="name">Name/Business Name</label>
+        <input type="text" id="name" name="Business" required />
+        <label for="Phone-num">Phone Number</label>
+        <input
+          id="Phone-num"
+          type="number"
+          placeholder="whatsApp Number"
+          required
+        />
+        <label for="email">Your email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Example...dil@gmail.com"
+        />
+        <!-- <select name="select-btn" id="select">aluminium</select> -->
+        <label for="">Tell Us The Product You Need: </label>
+        <textarea name="order" id="oders" cols="30" rows="3"></textarea>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <p>
+        A website of DonJiokeson Investment Limited copyright@Alright reserved,
+        no part of this website may be duplicated by any third-party or entity
+        for any purpose. powered by: CreativeDad web Consult. Ent.
+      </p>
+    </footer>
   </main>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
