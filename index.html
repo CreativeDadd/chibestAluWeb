@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compactible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,700;0,900;1,200&display=swap" rel="stylesheet"> 
     <!-- <script
       src="https://kit.fontawesome.com/9d88e91102.js"
       crossorigin="anonymous"
     ></script> -->
     <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link
       rel="icon"
       type="image/x-icon"
@@ -19,7 +24,7 @@
   </head>
 
   <body>
-    <main>
+    
     <!-- color theme: "blue, red, white" -->
     <nav class="navbar" id="nav-bar">
       <a class="logo-anchor" href="#home"
@@ -71,21 +76,25 @@
         <i class="fa-solid fa-chevron-left"></i>
         <i class="fa-solid fa-chevron-right"></i>
 
-        <h1>You Can Bank on Us.</h1>
+        <h1>You Can <span style="color: #e60000
+          ;">Bank on Us</span>.</h1>
         <ul>
-          <h2>Do you need quality:</h2>
+          <h2 style="color: #FFE34D
+          ;">Do you need quality:</h2>
           <li>Corugated Aluminum Roofing Sheets?</li>
           <li>Roofing Gutters</li>
           <li>Beautiful P.O.P?</li>
           <li>Roofing Accessories?</li>
           <li>Roofing Professionals?</li>
         </ul>
-        <p>
-          Our prices are very affordable and negotiable. We value our customers
-          satisfaction above any business asset and above any thing. Our
-          experience in roofing materials place us in the best light before all
-          our clients.
-        </p>
+        <button class="btn-us action-btn"><i class="fa-brands fa-whatsapp"></i>Contact Us</button>
+        <h1 class="company-name" style="color: #fff">
+          <span Style="color: red; font-size: 1.5rem;">Don.Jiokeson</span
+          ><br>Investment Ltd.
+        </h1>
+
+          </div>
+        
 
         <!-- <div class="hero-btn-div">
             <button id="our-product" class="btn-cta action-btn">Order Now</button>
@@ -106,10 +115,31 @@
       </div>
       <!----------Slider 1 ends here -->
 
+      <!-- Best Experience with us: -->
+      <div class="cta-sect">
+        <div class="cta-wrapper">
+          <h2 style="text-align: center;">You Have The Best Business Experience With Us.</h2>
+          <p>
+            High quality and global standard roofing materials. At Don.Jiokeson Investment limited, we know what to do and we have what it takes to make your building and real estate  projects very affordable and profitable.
+            Our prices are very affordable and negotiable. We value our customers
+            satisfaction above any business asset and above any thing. Our
+            experience in roofing materials place us in the best light before all
+            our clients.
+          
+            <div class="cta-1">We import high quality aluminium roofing sheets and stone tiles. You will get the best price bargains / cost saving deals on all your purchases from us. <div class="product-btns">
+              <button><a href="compare_price.html">Get Quotations</a></button>
+              <button><a href="#">Kown The Price</a></button>
+            </div></div>
+          </p>
+        </div>
+          <div class="cta-img-div">
+              <img class="cta-img" src="images\alu-coil-wh.jpg" alt="step-tiles">
+              <img class="cta-img" src="images\corrugated-span2.jpg"alt="long-span-mantra">
+          </div>
+      </div>
+
       <!-------- Slider-2 starts here --------->
       <div class="slider_two" id="slider-two">
-        <img src="" alt="" class="slider_img-2" />
-
         <div class="swipe_msg_two">
           <h2>We Know How to Do it Better.</h2>
           <h4>
@@ -118,11 +148,11 @@
           </h4>
           <ul>
             <li>
-              You Will Get Any Kind of Gerald-Stone Roffing Tiles & Aluminum
+              You Will Get Various Qaulity Designs of Gerald-Stone Roffing Tiles & Aluminum
               Roofing Materials directly from our Factory At All Time.
             </li>
             <li>You Will Get quick Response.</li>
-            <li>You Will Get Best Services & Advises for Your Roofing</li>
+            <li>You Will Get Best Services & Advises for Your Roofing Projescts</li>
             <li>
               You will Get all You Need to Beautifully & Quickly Complete Your
               Roofing Project
@@ -130,11 +160,31 @@
           </ul>
           <p>
             Beginning from your project planning, to your procurement, to your
-            logistic and to your final installation of any our Products, we will
-            right there with you to advice support and above all to offer our
+            logistic and to your final installation of any our Roofing Material, we will be
+            right there with; you to advice you, support you and above all, to offer our
             professional service because we know how to do it better.
           </p>
         </div>
+      </div>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1 <img src="images\gerald-many-bty.jpg" alt=""></div>
+    <div class="swiper-slide">Slide 2 <img src="images\gutters-displayed.jpg" alt=""> </div>
+    <div class="swiper-slide">Slide 3 <img src="images\geragRoof .jpg" alt=""> </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+        <!-- <img src="images\gerald-many-bty.jpg" alt=""> -->
+
       </div>
     </div>
     <!------ slide-2 ends here-------->
@@ -142,18 +192,24 @@
     <!----- Slider_three starts here----->
     <div class="slider_three">
       <div class="swipe_msg_three">
-        <h1>Your Building Project Deserves the Best Final Touch.</h1>
+        <h2>Your Building Project Deserves the Best Final Touch.</h2>
+        <figure>
+          <img src="images\std-hs-beaut.jpg">
+          <img src="images\pop-interior.jpg">
+        </figure>
+       
         <p>
           High Quality innovative Products and materials for all your needs in
           your home Luxury interrior decoration and house renovations are
           available Nation-Wide. Wirh us Your house building works/projects
           deserves the best final touch.
         </p>
+
       </div>
     </div>
 
     <!-------- Our Products ----->
-    <h1>Our Products</h1>
+    <h1 class="our-prd">Our Products</h1>
 
     <section class="container_our_product" id="container_our_product">
       <div class="grid-1-wrapper">
@@ -164,10 +220,13 @@
           id="grid-img"
         />
         <div class="short-para">
-          <h4>Stone Tile</h4>
+          <h4>Step Tiles Aluminium </h4>
+          <div class="product-btns">
+            <button>Get Quotations</button>
+            <button>Learn More</button>
+          </div>
           <p>
-            The easthetic beauty of gerald stone tiles roofing sheet will bring
-            out the loxirouse looks and feels you deserve for your house
+            
           </p>
         </div>
       </div>
@@ -185,7 +244,7 @@
           </p>
         </div>
       </div>
-      <div class="grid-1-wrapper">
+      <!-- <div class="grid-1-wrapper">
         <img src="images\pop-sealing.jpg" alt="prod-1" class="prod-1-img" />
         <div class="short-para">
           <h4>Stone Tile</h4>
@@ -262,36 +321,35 @@
             out the loxirouse looks and feels you deserve for your house
           </p>
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- -------  Our-Services  ---------- -->
     <section class="our-services" id="our-services">
-      <ul>
         <h1>"Our Services"</h1>
-        <li>
+        <p class="service service1">
+          <img src="images\std-hs-brf.jpg"  class="proj-img" />
           Manufactures & Sales of High Qaulity Corrugated Aluminium Roofing
           Sheet and aluminium coils at Wholesales Prices
-        </li>
-        <li>
-          Installation of Roofs for Various Projects in any Location Nation-Wide
-        </li>
-        <li>Design, Cast and Installation of Mordern Beautiful P. O. P.</li>
-        <li>
+          Installation of Roofs for Various Projects in any Location Nation-Wide.
+        </p>
+        <p class="service service2">
+          <img src="images\pop-prjt-2.jpg"  class="proj-img" />
+        Design, Cast and Installation of Mordern Beautiful P. O. P.
+        </p>
+        <p class="service service3">
+          <img src="images\pop-prjt-2.jpg"  class="proj-img" />
           We Sell and Install Roofing Stone-Tiles, Our Prices are competetive
           and cost saving
-        </li>
-        <li>
           Our Roof Rain Gutters are Second to None. Try Us. We have foreign made
           Roof Rain gutter and we also craft VERY Neat and Reliable Aluminium
-          Gutters
-        </li>
-        <li>Roofing Renovations and Repairs</li>
-        <li>Accessories, Such as nails, SCrews, Gutters, Gum, etc.</li>
-      </ul>
-      <div>
-        <img src="images\std-hs-prj.jpg" alt="prj-img1" class="proj-img" />
-        <img src="images\pop-prjt-2.jpg" alt="prj-img2" class="proj-img" />
-      </div>
+          Gutters.
+          
+        </p>
+        <p class="service service4">
+          <img src="images\pop-prjt-2.jpg"  class="proj-img" />
+        Roofing Renovations and Repairs
+        Accessories, Such as nails, SCrews, Gutters, Gum, etc.
+      </p>
     </section>
 
     <!---------------- About Us Starts Here -------------->
@@ -348,7 +406,35 @@
         for any purpose. powered by: CreativeDad web Consult. Ent.
       </p>
     </footer>
-  </main>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+
+   loop: true,
+ 
+   // If we need pagination
+   pagination: {
+     el: '.swiper-pagination',
+     clickable: true,
+   },
+ 
+   // Navigation arrows
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+ 
+   
+ });
+ 
+
+
+
+    </script>
   </body>
 </html>

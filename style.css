@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,8 +7,9 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+
 }
 
 
@@ -70,18 +73,12 @@ body {
 /* --------main styling-------------- */
 
 .slider_one {
-    
-    background-image: linear-gradient(65deg, #e60000 60%, rgba(0, 0, 187, 0.25) -30%), url("images/first-img.jpg");
-
-}
-
-.slider_one {
-    /* background-image: linear-gradient(rgba(26, 26, 255, 0.89), rgba(26, 26, 255, 0.7 )),  url("images/first-img.jpg"); */
+    background-image: linear-gradient(65deg, #00a 50%, rgba(0, 0, 187, 0.16) -30%), url("images/first-img.jpg");
     background-origin:  padding-box; 
     background-position:  center;
     background-repeat: no-repeat;  
     background-size: cover;
-    margin-top: 5.2em;
+    margin-top: 4.5em;
     padding: 25px;
     color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
@@ -89,7 +86,302 @@ body {
     line-height: 1.5;
 }
 
-@media only screen and (max-width:57.625rem){
+.slider_one h1{
+    margin: 1em auto;
+    font-size: 2.5em;
+    text-align: center;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.slider_one ul {
+    font-size: 1.2em;
+}
+
+/* =-=-=-=-buttons styles=-=-=-=-=-=- */
+.btn-us{
+    background: #25D366;
+    outline: none;
+    border: none;
+    margin-top: 0.85em;
+}
+.action-btn {
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.cta-1 button {
+    width: 190px;
+    height: 37px;
+    padding: 0.75em 1.5em;
+    margin: 2em 1em 0 1em;
+    border: none;
+    border-radius: 68px;
+    background: rgba(230, 0, 0, 0.94);
+    color: #fff;
+}
+
+.cta-1 button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+
+}
+/* =-=-=-=-=-=-=-=-=cta section styles stars-=-=-=-=-=-=-=-=-=-=- */
+
+.cta-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    line-height: 1.5rem;
+    margin: auto;
+} 
+
+.cta-img{
+    border-radius: 8px;
+    width: 25em;
+    height: 25em;
+}
+
+.cta-sect .cta-wrapper p {
+    padding: 2% 10%;
+    margin: 0.75em auto;
+}
+
+.cta-wrapper .cta-1{
+    line-height:1.65em;
+    border-radius: 4px; 
+    color:#fff; 
+    width: 30em; 
+    margin: auto; 
+    padding: 1.5em;
+     background: #1a1aff; text-align:center; 
+    font-size: 1.5rem; 
+}
+ 
+/* -----==-=-====Slider_two styles starts here====-=-=-=-=-=-=-= */
+
+  .slider_two {
+      display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        background: rgb(5, 18, 49);
+      color: #fff;
+      padding: 3em;
+      
+  }
+  .swipe_msg_two h2 {
+      color: #e60000;
+      text-align: center;
+  }
+  .swipe_msg_two h4 {
+      color: #FFbC00;
+      text-align: center;
+  }
+  .slider_two img{
+      width: 400px;
+  } 
+
+  .swipe_msg_two{
+    margin-right: 1em;
+}
+
+.swipe_msg_two ul li {
+    margin: 0.75em 0;
+
+}
+ /* ========== slider_three style starts here ========-= */
+ .slider_three {
+     /* width: 50%; */
+     margin: auto;
+ }
+
+.swipe_msg_three {
+    padding: 1.25em;
+    
+}
+
+.slider_three figure{
+    display: flex;
+    gap: 18px;
+}
+.swipe_msg_three img {
+    position: relative;
+    width: 50%;
+    height: 33em; 
+    border-radius: 0.45em;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.54);  
+    animation: move3 1.35s 1; 
+    z-index: -2;
+}
+
+@keyframes move3 {
+    from{left: -2px;}
+    to{left: 507px}
+    
+    
+}
+
+.swipe_msg_three h2, .swipe_msg_three p {
+    text-align: center;
+    margin: 0.75em;
+}
+
+
+/* =================Our Product styles stars  ============== */
+.our-prd {
+    text-align: center;
+}
+
+
+
+ /* --------- Import -------------- */
+
+ 
+/* --------- Our Products section ---------- */
+
+.divider2 {
+    width: 450px;
+    height: 52px;
+    border: 4px solid #1a1aff;
+    margin: 5px auto;
+}
+   .fa-fire-flame-curved {
+       font-size: 42px;
+       color: rgba(230, 46, 0, 0.75);
+       background: #efef45;
+       padding: 6px;
+       border-radius: 3px;
+   }
+.container_our_product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    margin: 12px auto;
+    gap: 12px;
+
+}
+
+.grid-1-wrapper {
+    width:  300px;
+    height: 350px;
+    border: 3px solid rgba(0, 0, 0, 0.35);
+    border-radius: 14px;
+    color: #1a1aff;
+
+}
+
+.prod-1-img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+/*======== Our Services Styling ========== */
+
+.our-services {
+    border-radius: 12px;
+    width: 38rem;
+    margin: 24px auto;
+    line-height: 1.3;
+    /* border: #1a1aff solid 3px; */
+}
+.our-services h1 {
+    text-align: center;
+    background-color: #e60000;
+}
+
+.service {
+    border: 3px solid #1a1aff;
+    line-height: 1.5rem;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.975em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.13rem;
+    color: #fff;
+}
+.service1 {
+    background-image: linear-gradient(to right, #1a1aff, #e60000);
+    padding: 1.25em;
+}
+.service2 {
+    background-image: linear-gradient(to right, #1a1aff, #e60000);
+    padding: 1.25em;
+}
+.service3 {
+    background-image: linear-gradient(to right, #1a1aff, #e60000);
+    padding: 1.25em;
+}
+.service4 {
+    background-image: linear-gradient(to right, #1a1aff, #e60000);
+    padding: 1.25em;
+}
+
+.proj-img {
+    width: 7rem;
+    height: 6rem;
+    margin: 0.65em;
+    /* float: right; */
+    /* border-radius: 1em; */
+}
+
+
+/*------------ About us style  -------------------  */
+.about-us {
+    color: rgb(240, 240, 255);
+    background: rgb(0, 0, 0);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    height: 150vh; */
+}
+
+/* ===========Form Styling Starts================== */
+
+form {
+    /* border: #000 solid 4px; */
+    display: flex;
+    flex-direction: column;
+    background: #e60000;
+    padding: 14px;
+    width: 450px;
+    margin: 22px auto;
+    border-radius: 6px;
+
+}
+ label {
+     margin-top: 16px;
+ }
+
+ .submit-btn {
+     margin: 18px auto 0;
+     width: 250px;
+ }
+
+
+
+ /* ---------- footer   ------------------ */
+ footer {
+     background: rgba(0, 0, 0, 0.85);
+     color: rgb(200, 200, 255);
+     padding: 16px;
+ }
+
+@media only screen and (max-width:43.875rem){
     .menu-togle {
         position: absolute;
         top: 1em;
@@ -126,7 +418,7 @@ body {
 
     .navlistdiv ul {
         position: absolute;
-        background: rgba(25, 55, 95, 0.75);
+        background: rgb(25, 55, 95);
         flex-direction: column;
         width: 100%;
     }
@@ -148,16 +440,134 @@ body {
     }
 
     .navlistdiv ul li:hover{
-        background: rgb(66, 45, 170);
+        background: #000;
+        /* background: rgb(26, 7, 124); */
         display: block;
         width: 100%;
+        font-size: 1.35rem;
     }
 
 
     .top_contact {
         display: none;
     }
+
+
     
+     
     
+    .cta-wrapper .cta-1{
+        line-height:1.65em; 
+        color:#fff; 
+        width: 100%; 
+        margin: 0; 
+        padding:1.5em;
+         background: #1a1aff; text-align:center; 
+        font-size: 1.5rem; 
+    }
+    
+    .cta-img-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* background-image: linear-gradient(); */
+        
+    }
+
+     .cta-img {
+        width: 21em;
+        height: 21em;
+        margin-bottom: 0.72em;
+    }
+
+    .slider_two {
+        border-radius: 0.35em;
+        display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    .slider_two img{
+        width: 100%;
+        border-radius: 0.31em;
+    } 
+
+    .slider_three {
+        width: 90%;
+        margin: auto;
+        padding: 0.875em;
+    }
+
+    .slider_three figure{
+        /* border: #FFbC00 solid 3px; */
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .slider_three img{
+        width: 100%;
+        height: 18em;
+        border-radius: 0.45em;
+
+
+    } 
+
+    /* ----------our product style --------------- */
+    .container_our_product {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* ========= ------our services styles-----======= */
+    .service {
+        width: 20em;
+        margin: auto;
+        margin-bottom: 0.95em;
+    }
+    .our-services {
+        border-radius: 12px;
+        width: 80%;
+        margin: 20px auto;
+        line-height: 1.3;
+    }
+    .our-services h1 {
+        text-align: center;
+        background-color: #e60000;
+        margin-bottom: 12px;
+    }
+    
+    .service {
+        border: 3px solid #1a1aff;
+        line-height: 1.5rem;
+        border-radius: 0.5em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-bottom: 0.975em;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.13rem;
+        color: #fff;
+    }
+
+    
+    .proj-img {
+        width: 7rem;
+        height: 6rem;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+
+/* ----------swiper js----------- */
+.swiper {
+    width: 30rem;
+    border: 10px solid red;
+    z-index: -123;
+    border-radius: 29px;
 
 }

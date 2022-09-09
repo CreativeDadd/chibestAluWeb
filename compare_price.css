@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(23, 43, 100, 0.35), rgba(10, 14, 97, 0.5) ), url("images/std-hs-beauty.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+}
+
+#faq_btn {
+    font-size: 1.25rem;
+    padding: 0.25em 0.67em;
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+    background: #af3;
+    border: 2px solid #fff;
+    width: 8em;
+    color: #fff;
+    border-radius: 100vmax;
+    transition: 0.25s;
+    z-index: 12;
+
+}
+
+#faq_btn:hover{
+    background: #F15;
+    color:#fff;
+    border: 2px solid #Fff;
+    cursor: pointer;
+    justify-self: flex-end;
+    transform: translateY(-1.25px);
+}
+
+.accordion {
+    /* display: none; */
+    position: relative;
+    bottom: -5%;
+    background: #F15;
+    color: #fff;
+    border-radius: 0.61em;
+    padding: 1em;
+    width: 350px;
+    box-shadow: 0 0 0 100vmax  rgba(0, 0, 0, 0.35);
+    transition: 1s;
+    animation: animateAccord 0.2s ease-in-out;
+}
+
+@keyframes animateAccord {
+    from { bottom: -70%;
+        opacity: 0;
+    }
+    to {
+        bottom: 0%;
+        opacity: 0.21;
+    }
+} 
+
+
+#closeBtn{
+    position: absolute;
+    right: 3%;
+    top: 0%;
+    color: #222;
+    font-size: 18px;
+    padding: 0.5em;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+#closeBtn:hover{
+    border: #999 solid 1px;
+    color: #fff;
+}
+ 
+.accordion .header {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.accordion .content{
+    text-align: center;
+}
+.accordion .content .question {
+    position: relative;
+    border-bottom: 2px solid #999;
+    text-align: left;
+    line-height: 2.25em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.accordion .content .answer {
+    margin: 0.25em 0;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+
+.content .question::after {
+    content: "+";
+    position: absolute;
+    right: 0%;
+    font-size: 1.7rem;
+}
+
+.accordion .content.active .answer{
+    height: 120px;
+}
+.content.active .question::after{
+    content: "-";
+}

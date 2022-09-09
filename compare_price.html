@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compare_price.css">
+    <title>Know the price</title>
+</head>
+<body>
+    <body>
+        <div class="accordion">
+            <div class="header">
+                <h1>Various Types Of Roofing Materials and Their Prices</h1>
+            </div>
+            <div class="content">
+                <div class="question" id="question1">Short_Span Corrugated Aluminium Sheet</div>
+                <div class="answer">
+                </div>
+            </div>
+            <div class="content">
+                <div class="question" id="question2">Can I call the Admin.?</div>
+                <div class="answer">Lorem ipsum dolor, 
+                    sit amet consectetur adipisicing 
+                    elit. Quam, eveniet. Iure ab sequ
+                    i nihil quisquam. Quis doloremque aspernatur molestias,
+                </div>
+            </div>
+            <div class="content">
+                <div class="question" id="question3">How Do I Get Paid?</div>
+                <div class="answer">Lorem ipsum dolor, 
+                    sit amet consectetur adipisicing 
+                    elit. Quam, eveniet. Iure ab sequ
+                    i nihil quisquam. Quis doloremque aspernatur molestias,
+                </div>
+            </div>
+        </div>  
+    <!-- </div> -->
+   
+<script>
+    let content = document.getElementsByClassName("content");
+// let faqBtn = document.getElementById('faq_btn');
+let accordionDiv = document.querySelector(".accordion");
+let closeBtn = document.querySelector("#closeBtn");
+let body = document.querySelector("body");
+
+
+// faqBtn.addEventListener('click', ()=>{
+//     accordionDiv.style.display = 'block';
+// })
+
+for (let i=0; i<content.length; i++){
+
+    content[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+    })
+    content[i].addEventListener('click', function() {
+        this.previousElementSibling.classList.remove('active');
+        this.previousElementSibling.previousElementSibling.classList.remove('active');
+        this.nextElementSibling.classList.remove('active');
+        this.nextElementSibling.nextElementSibling.classList.remove('active');
+
+
+    })
+}
+
+closeBtn.addEventListener('click', ()=>{
+    accordionDiv.style.display = 'none';
+})
+
+// window.addEventListener('click', function(e) {
+//     if(e.target === body) {
+//         accordionDiv.style.display = 'none';
+//     }
+// })
+</script>
+
+    
+</body>
+</html>
