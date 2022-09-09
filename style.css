@@ -21,7 +21,7 @@ body {
     right: 0; 
     box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.35);
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
     align-items: center;
     background: rgb(25, 45, 95) ;
@@ -381,21 +381,7 @@ form {
      padding: 16px;
  }
 
-@media only screen and (max-width:34em){
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0; 
-        box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.35);
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        background: rgb(25, 45, 95) ;
-    }
-    
-    
+@media only screen and (max-width:900px){
     .menu-togle {
         position: absolute;
         top: 1em;
