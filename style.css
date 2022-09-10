@@ -11,7 +11,26 @@ body {
     overflow-x: hidden;
 
 }
+.swiper {
+    width: 50%;
+    height: 450px;
+    z-index: -13;
+    border: #e60000 solid 2px;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+.swiper-slide{
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 600;
+    background: #e60000;
+    color: #fff;
+}
 
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
 
 
 .navbar {
@@ -26,6 +45,8 @@ body {
     align-items: center;
     background: rgb(25, 45, 95) ;
 }
+
+
 
 .navlist {
     display: flex;
@@ -50,6 +71,10 @@ body {
 }
 .logo-anchor {
     margin: 0.5em;
+}
+
+.logo-name, .logo-name span {
+    text-decoration: none;    
 }
 
 .menu-togle {
@@ -78,8 +103,8 @@ body {
     background-position:  center;
     background-repeat: no-repeat;  
     background-size: cover;
-    margin-top: 4.5em;
-    padding: 25px;
+    margin-top: 3em;
+    padding: 1.7em;
     color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
     height: 100vh;
@@ -88,7 +113,7 @@ body {
 
 .slider_one h1{
     margin: 1em auto;
-    font-size: 2.5em;
+    font-size: 2.35em;
     text-align: center;
     font-family:'Ubuntu', sans-serif;
 }
@@ -102,7 +127,7 @@ body {
     background: #25D366;
     outline: none;
     border: none;
-    margin-top: 0.85em;
+    margin-top: 1.85em;
 }
 .action-btn {
     width: 150px;
@@ -240,52 +265,49 @@ body {
 
 
 /* =================Our Product styles stars  ============== */
+
 .our-prd {
     text-align: center;
 }
-
-
-
- /* --------- Import -------------- */
-
  
 /* --------- Our Products section ---------- */
 
-.divider2 {
-    width: 450px;
-    height: 52px;
-    border: 4px solid #1a1aff;
-    margin: 5px auto;
-}
-   .fa-fire-flame-curved {
-       font-size: 42px;
-       color: rgba(230, 46, 0, 0.75);
-       background: #efef45;
-       padding: 6px;
-       border-radius: 3px;
-   }
+                .divider2 {
+                    width: 450px;
+                    height: 52px;
+                    border: 4px solid #1a1aff;
+                    margin: 5px auto;
+                }
+                .fa-fire-flame-curved {
+                    font-size: 42px;
+                    color: rgba(230, 46, 0, 0.75);
+                    background: #efef45;
+                    padding: 6px;
+                    border-radius: 3px;
+                }
+
+
 .container_our_product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 600px;
-    margin: 12px auto;
-    gap: 12px;
+    width: 70%;
+    margin: auto;
+    gap: 1.3em;
 
 }
 
 .grid-1-wrapper {
-    width:  300px;
-    height: 350px;
-    border: 3px solid rgba(0, 0, 0, 0.35);
-    border-radius: 14px;
-    color: #1a1aff;
+    height: 21.875em;
+    margin: auto;
+    border: 3px solid #e60000;
+    border-radius: 0.75em;
 
 }
 
 .prod-1-img {
     width: 100%;
-    height: 200px;
-    border-top-left-radius: 14px;
+    height: 15.625em;
+    border-top-left-radius: 0.75em;
     border-top-right-radius: 14px;
 }
 
@@ -293,10 +315,9 @@ body {
 
 .our-services {
     border-radius: 12px;
-    width: 38rem;
+    width: 55%;
     margin: 24px auto;
     line-height: 1.3;
-    /* border: #1a1aff solid 3px; */
 }
 .our-services h1 {
     text-align: center;
@@ -304,64 +325,65 @@ body {
 }
 
 .service {
-    border: 3px solid #1a1aff;
+    border: 3px solid rgba(0, 0, 0, 0.36);
     line-height: 1.5rem;
     border-radius: 0.5em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 0.975em;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.13rem;
-    color: #fff;
-}
-.service1 {
-    background-image: linear-gradient(to right, #1a1aff, #e60000);
     padding: 1.25em;
+    color: rgba(0, 0, 0, 0.36);
+}
+/* .service1 {
+    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
 }
 .service2 {
-    background-image: linear-gradient(to right, #1a1aff, #e60000);
+    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
     padding: 1.25em;
 }
 .service3 {
-    background-image: linear-gradient(to right, #1a1aff, #e60000);
+    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
     padding: 1.25em;
 }
 .service4 {
-    background-image: linear-gradient(to right, #1a1aff, #e60000);
+    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
     padding: 1.25em;
-}
+} */
 
 .proj-img {
     width: 7rem;
     height: 6rem;
     margin: 0.65em;
-    /* float: right; */
-    /* border-radius: 1em; */
+    border-radius: 1em;
 }
 
 
 /*------------ About us style  -------------------  */
-.about-us {
+.about-us div {
     color: rgb(240, 240, 255);
-    background: rgb(0, 0, 0);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 12px;
-    height: 150vh; */
+    padding: 3em;    
 }
 
-/* ===========Form Styling Starts================== */
+.about-us {
+    background: rgb(0, 0, 0); 
+}
 
+
+/* =========== Form Styling Starts ================== */
+.form-section {
+    background: #000;
+    margin: -1.55em;
+    padding: 2em;
+}
 form {
-    /* border: #000 solid 4px; */
     display: flex;
     flex-direction: column;
     background: #e60000;
     padding: 14px;
-    width: 450px;
+    max-width:45%;
     margin: 22px auto;
-    border-radius: 6px;
-
+    border-radius: 0.5em;
 }
  label {
      margin-top: 16px;
@@ -369,7 +391,15 @@ form {
 
  .submit-btn {
      margin: 18px auto 0;
-     width: 250px;
+     width: 60%;
+     height: 2em;
+     background: #1a1aff;
+     color: #fff;
+     font-size: 1.2em;
+     border: none;
+     outline: none;
+     border-radius: 6em;
+     cursor: pointer;
  }
 
 
@@ -525,32 +555,25 @@ form {
     }
     
     /* ========= ------our services styles-----======= */
-    .service {
-        width: 20em;
-        margin: auto;
-        margin-bottom: 0.95em;
-    }
+    
     .our-services {
         border-radius: 12px;
-        width: 80%;
-        margin: 20px auto;
+        line-height: 1.3;
+        width: 75%;
+        margin: 24px auto;
         line-height: 1.3;
     }
+
     .our-services h1 {
         text-align: center;
-        background-color: #e60000;
-        margin-bottom: 12px;
+        margin-bottom: 1.75em;
+        padding: 0.75em;
     }
     
     .service {
-        border: 3px solid #1a1aff;
+        margin: auto;        
         line-height: 1.5rem;
-        border-radius: 0.5em;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         margin-bottom: 0.975em;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 1.13rem;
-        color: #fff;
     }
 
     
@@ -558,16 +581,30 @@ form {
         width: 7rem;
         height: 6rem;
         margin: auto;
-        width: 100%;
     }
-}
+
 
 
 /* ----------swiper js----------- */
 .swiper {
-    width: 30rem;
-    border: 10px solid red;
-    z-index: -123;
-    border-radius: 29px;
+    width: 85%;
+    height: 22em;
+    z-index: -13;
+    border-radius: 1em;
+    margin-top: 1em;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #e60000;
+    padding: 14px;
+    min-width: 75%;
+    margin: 22px auto;
+    border-radius: 0.5em;
+}
+
+
 
 }
