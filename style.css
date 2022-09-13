@@ -297,18 +297,18 @@ body {
 }
 
 .grid-1-wrapper {
-    height: 21.875em;
+    /* height: 50.875em; */
     margin: auto;
-    border: 3px solid #e60000;
-    border-radius: 0.75em;
+    /* border: 3px solid #e60000; */
+    /* border-radius: 0.75em; */
 
 }
 
 .prod-1-img {
     width: 100%;
     height: 15.625em;
-    border-top-left-radius: 0.75em;
-    border-top-right-radius: 14px;
+    /* border-top-left-radius: 0.75em; */
+    /* border-top-right-radius: 14px; */
 }
 
 /*======== Our Services Styling ========== */
@@ -408,7 +408,7 @@ form {
  footer {
      background: rgba(0, 0, 0, 0.85);
      color: rgb(200, 200, 255);
-     padding: 16px;
+     padding: 4em;
  }
 
 @media only screen and (max-width:900px){
@@ -549,9 +549,19 @@ form {
 
     /* ----------our product style --------------- */
     .container_our_product {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .grid-1-wrapper {
+        border: none;
+        
+    }
+
+    .prod-1-img{
+        border-radius: 0;
     }
     
     /* ========= ------our services styles-----======= */
