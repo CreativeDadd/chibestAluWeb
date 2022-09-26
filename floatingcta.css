@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/* ---------Floating button---------- */
+/* .cta-side {
+    position: fixed;
+    top: 45%;
+    right: 0;
+    margin: 1rem;
+} */
+.float-contact {
+    list-style: none;
+    position: fixed;
+    top: 45%;
+    right: 0;
+    margin: 1rem;
+    z-index: 188;
+    background-color: #0000009f;
+    padding: 00.85rem;
+    border-radius: 00.35em;
+}
+
+
+.float-contact li {
+    display: grid;
+    border-radius: 0.35em;
+}
+
+.float-contact li:hover{
+    background: #000;
+    border: #fff solid 1px;
+    border-radius: 0.25em;
+    transition: 0.52s;
+
+}
+
+.float-contact li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 0.35rem;
+    padding: 0.25em;
+}
+
+.whatsapp-click {
+    background: green;
+    margin-bottom: 0.25rem;
+
+}
+
+.call-us{
+    background: #f06;
+    margin-bottom: 0.25rem;
+}
+.call-us a {
+    background: #f06;
+    margin-bottom: 0.25rem;
+    display: none;
+}
+
+.email-us {
+    background: #ff9900;
+    margin-bottom: 0.25rem;
+}
+
+.address-click {
+    background: #e10000;
+    margin-bottom: 0.25rem;
+}
+
+.enquiry-desktop {
+    background: #333;
+    margin-bottom: 0.25rem;
+}
+.enquiry-mobile a {
+    display: none;
+    background: #333;
+    margin-bottom: 0.25rem;
+}
+
+.top {
+ background:   #1a1aff;
+
+}
+
+.fa-arrow-right {
+    font-size: 1.75em;
+    cursor: pointer;
+    background: #fff;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+@media only screen and (max-width: 780px) {
+    
+    .float-contact {
+        position: fixed;
+        top: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        width: 100%;
+        height: 2em;
+        margin: auto; 
+        z-index: 188; 
+    }
+
+    .call-us a {
+    /* background: #f06; */
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.float-contact li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 0.35rem;
+    padding: 0.25em;
+}
+
+.float-contact li {
+    border-radius: 0;
+    width: 20%;
+}
+
+.enquiry-desktop a {
+    display: none;
+}
+
+.enquiry-mobile a {
+display: block;
+background: #333;
+margin-bottom: 0.25rem;
+
+}
+
+.top {
+    background:   #1a1aff;
+   
+   }
+   
+
+}

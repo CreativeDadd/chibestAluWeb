@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="floatingcta.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -49,7 +50,7 @@
 
       <div class="navlistdiv">
         <ul id="nav-ul" class="navlist">
-          <li class="active-link"><a href="#">Home</a></li>
+          <li id="home" class="active-link"><a href="#">Home</a></li>
           <li><a href="#container_our_product">Products</a></li>
           <li><a href="#our-services">Services</a></li>
           <li><a href="#about-us">About Us</a></li>
@@ -68,7 +69,66 @@
       </div>
     </nav>
 
+
+
+      <!-- ################################################# -->
+        <!---------floating cta fixed buttons--------------->
+      <!-- ################################################# -->
+      
+      <div  class="cta-side">
+      <ul class="float-contact">
+        <!-- <i class="fa-solid fa-arrow-left"></i> -->
+      <!-- <i class="fa-solid fa-arrow-right"></i> -->
+
+        <li class="whatsapp-click">
+          <a href="#">
+          <i class="fa-brands fa-whatsapp"></i><br>
+          <span>whatsapp</span>
+          </a>
+        </li>
+        <li class="call-us">
+          <a href="tel:07062080855">
+          <i class="fa-solid fa-phone"></i><br>
+          <span>Call</span>
+        </li>
+      </a>
+        <li class="email-us">
+          <a href="mailto:oyebolang@gmail.com">
+          <i class="fa-solid fa-envelope"></i><br>
+          <span>Email</span>
+        </a>
+        </li>
+         <li class="enquiry-mobile">
+          <a href="mailto:oyebolang@gmail.com">
+          <i class="fa-solid fa-envelope"></i><br>
+          <span>Form</span>
+        </a>
+        </li>
+        <li class="enquiry-mobile">
+          <a href="sms:07062080855">
+          <i class="fa-regular fa-comment"></i><br> 
+          <span>SMS</span>
+        </a>
+        </li>
+        <li class="enquiry-desktop">
+          <a href="#form-section">
+          <i class="fa-regular fa-comment"></i><br> 
+          <span>enquiry Form</span>
+        </a>
+        </li>
+        <li class="top">
+          <a href="#">          
+          <i class="fa-solid fa-chevron-up"></i><br>
+          <span>Top</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+
+
     <!-- slidders container -->
+
     <div class="slider-container" id="slider_wrapper">
       <!---------- slider1 ---------->
       <div class="slider_one">
@@ -96,22 +156,7 @@
           </div>
         
 
-        <!-- <div class="hero-btn-div">
-            <button id="our-product" class="btn-cta action-btn">Order Now</button>
-            <button class="btn-us action-btn"><i class="fa-brands fa-whatsapp"></i>Contact Us</button>
-          </div> -->
-        <!-- <div class="slider-circles">
-            <div class="dot">
-              <i class="fa-solid fa-circle-dot"></i>
-              <i class="fa-solid fa-circle-dot"></i>
-              <i class="fa-solid fa-circle-dot"></i>
-            </div>
-            <div class="circle">
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle"></i>
-            </div>
-          </div> -->
+        
       </div>
       <!----------Slider 1 ends here -->
 
@@ -212,7 +257,8 @@
     </div>
 
     <!-------- Our Products ----->
-<h1 class="our-prd">Our Products</h1>
+<h1 class="our-prd-h1">Our Products</h1>
+
 
     <section class="container_our_product" id="container_our_product">
       <div class="grid-1-wrapper">
@@ -224,14 +270,9 @@
         />
         <div class="short-para">
           <h4>Step Tiles Aluminium </h4>
-          <div class="product-btns">
-            <button><a href="tel:07062080855"><i class="fa-solid fa-phone"></i
-              ></a>Call Us</button>
-            <button>Learn More</button>
-          </div>
-          <p>
-            
-          </p>
+       
+          <p></p>     
+        
         </div>
       </div>
 
@@ -245,7 +286,7 @@
           <h4>Stone Tile</h4>
           <p>
             The easthetic beauty of gerald stone tiles roofing sheet will bring
-            out the loxirouse looks and feels you deserve for your house
+            out the loxirouse looks and feels you deserve for your house.
           </p>
         </div>
 
@@ -294,10 +335,7 @@
         <img src="images\gerad1.jpg" alt="prod-1" class="prod-1-img" />
         <div class="short-para">
           <h4>Stone Tile</h4>
-          <div class="product-btns">
-            <button>Get Quotations</button>
-            <button>Kown The Price</button>
-          </div>
+          
           <p>
             The easthetic beauty of gerald stone tiles roofing sheet will bring
             out the loxirouse looks and feels you deserve for your house
@@ -361,34 +399,113 @@
 
     <!---------------- About Us Starts Here -------------->
     <section class="about-us" id="about-us">
-      <div>
-        <h1>About Us</h1>
-      <h2>Don Jiokeson Investment Limited</h2>
-      <h3>Don Jiokeson Investment Ltd (A DIVISION OF CHUKS PATRICK LTD).</h3>
-      <p>
-        Importer and Expoter long span roofing sheets, high quality Aluminum
-        coil, Stone roof tiles, and accessories, corrugated aluminium roofings,
-        P.O.P design casting and installations. we value our customer
-        satisfaction above any asset and focus on making the best deals that
-        leaves our customers fufiled and happy. we respon to your oders ontime
-        without any delay.
-      </p>
-      <h1>Office Address</h1>
-      <h3>head Office:</h3>
-      <span>Ipaja Road, Opp Mobil Filling Station Agege, Lagos State.</span>
-      <h3>Factory Address:</h3>
-      <span>34, Oguudele Street, Oja Oba, Lagos State.</span>
-      <h3>Tel:<i class="fa-solid fa-phone"></i></h3>
-      <span>07062080855, 08124071615, 09052678720</span>
+      <!-- <div> -->
+        <div class="abt-div-el">
+          <div class="about-overlay">
+            <h1>About Us.</h1>
+            <h2>Don Jiokeson Investment Ltd (A DIVISION OF CHUKS PATRICK LTD).</h3>
+          </div>
+          
+          <p> @DonJiokeson Investment Ltd:
+            <ul class="service-ul">
+              <li>
+                We Are Importer and Expoter long span roofing sheets, high quality Aluminum
+                coil,
+              </li>
+              <li>
+                We Sell and Install Stone/Swiss Roofing tiles and and accessories.
+              </li>
+              <li>
+                We Do deliveries to your Projects Sites Nation-Wide.
+              </li>
+              <li>
+                We Sell Corrugated Aluminum Roofing Sheets of All Types, Colors and Thicknesses.
+              </li>
+              <li>
+                We do P.O.P Design, Castings, Skidding and Installations. We have Beautifully P.O.P Designs you can Choose From.
+              </li>
+              <li>
+                We Sell Roof-gutters: Both foriegn gutters and crafted gutters of various materials.
+              </li>
+              <li>
+                We Sell the Latest Roofing Accessories that makes Your Projects easy and Beatiful.
+              </li>
+              <li>
+                We have enough Staff-Strength to cater for huge roofing projects and all your needs at any stage of finishing touch concerning P.O.P.
+              </li>
+            </ul>
+            <div class="we-value">
+              we value our customer
+              satisfaction above any asset and focus on making the best deals that
+              leaves our customers fufiled and happy. we respon to your oders ontime
+              without any delay.
+            </div>
+          
+          </p>
+          <div class="office-address">
+            <h1>Office Address</h1>
+            <h3>head Office:</h3>
+            <span>Ipaja Road, Opp Mobil Filling Station Agege, Lagos State.</span>
+            <h3>Factory Address:</h3>
+            <span>34, Oguudele Street, Oja Oba, Agege, Lagos State.</span>
+            <h3>Tel:<i class="fa-solid fa-phone"></i></h3>
+            <span>07062080855, 08124071615, 09052678720</span>
+          </div>
+        </div>
+      <div class="the-ceo">
+        <h2>The CEO Remarks</h2><br><hr><br>
+        <figure>
+          <img src="images\pop-up-beauty.jpg" alt="the-ceo-img">
+          <figcaption>
+
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i><h4>Facebook</h4>
+              </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i><h4>Instagram</h4>
+              </a>
+
+            <a href="#tel:07062080855">
+              <i class="fa-solid fa-mobile"></i><h4>Lets Talk</h4>
+              </a>
+
+            <a href="#twitter">
+              <i class="fa-brands fa-twitter"></i><h4>Twitter</h4>
+              </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i><h4>Linkedin</h4>
+              </a>
+            
+          </figcaption>
+
+        </figure><br><hr>
+        <p>
+          <span style="font-size: 2em; color: #e60000;">"</span>I am Chijioke Donatus, I and my lovely wife started this company because of our passion to see the building construction industry succeed with the help of the right roofing materials, at the best cost saving prices and at the right time. I personally handle all your orders, deliveries, and installations. At DonJiokeson Investment Limimited we have done everything possible leaving no stone unturned in order to quickly respond to your aluminum roofing sheet demand of any colour and thickness, and to give you best finishing touch through our stunningly Beautiful P.O.P casting and installations and wall skidding. I place keen attention to details about your orders and we are very flexible ablout our pricing. Our company is a one-stop-shop for all your roofing matterials and accesories. I focus more on giving you one of the best quality, pricing and services you can think of because this is my job and this is what I do two-four-seven and it is what I do well. I look forward to doing business with you. <br><span style="font-size: 2em; color: red;">"</span>
+          <h4>Thank You</h4>
+          <div id="ceo-close"> 
+          <p style="color: #1a1aff;">Chijioke Donatus</p>
+          The CEO
+          <h4 class="logo-name"  style=" flex-wrap: wrap; color: #fff; display: flex; align-items: center; justify-content: center; background: #222; padding: 0.35rem; width: 100%;">
+            <p Style="color: #DD0004; font-size: 1.3rem;">DonJiokeson</p
+            >Investment Ltd.
+          </h4>
+         </div>
+        </p>
+
       </div>
-      
+    <!-- </div> -->
     </section>
 
-    <!-- --------- Contact Form ---------- -->
-    <section class="form-section">
+
+<!-- ++++++++++++++++++++++++++++++++++ -->
+<!-- --------- Contact Form ---------- -->
+    <section class="form-section" id="form-section">
       <form action="">
+        <h2 style="color: #fff; text-align: center;">Place Your Order</h2>
         <label for="name">Name/Business Name</label>
-        <input type="text" id="name" name="Business" required />
+        <input type="text" id="name" name="Business" required placeholder="name/company name"/>
         <label for="Phone-num">Phone Number</label>
         <input
           id="Phone-num"
@@ -401,11 +518,11 @@
           type="text"
           id="email"
           name="email"
-          placeholder="Example...dil@gmail.com"
+          placeholder="Example: dil@gmail.com"
         />
         <!-- <select name="select-btn" id="select">aluminium</select> -->
         <label for="">Tell Us The Product You Need: </label>
-        <textarea name="order" id="oders" cols="30" rows="3"></textarea>
+        <textarea name="order" id="oders" cols="27" rows="5"></textarea>
         <button class="submit-btn" type="submit">Submit</button>
       </form>
     </section>
@@ -446,5 +563,7 @@
 
 
     </script>
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> 
   </body>
 </html>

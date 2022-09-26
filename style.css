@@ -44,6 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgb(25, 45, 95) ;
+    z-index: 999999;
 }
 
 
@@ -110,7 +111,6 @@ body {
     height: 100vh;
     line-height: 1.5;
 }
-
 .slider_one h1{
     margin: 1em auto;
     font-size: 2.35em;
@@ -270,31 +270,25 @@ body {
     text-align: center;
 }
  
-/* --------- Our Products section ---------- */
-
-                .divider2 {
-                    width: 450px;
-                    height: 52px;
-                    border: 4px solid #1a1aff;
-                    margin: 5px auto;
-                }
-                .fa-fire-flame-curved {
-                    font-size: 42px;
-                    color: rgba(230, 46, 0, 0.75);
-                    background: #efef45;
-                    padding: 6px;
-                    border-radius: 3px;
-                }
-
+ 
 
 .container_our_product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
     margin: auto;
-    gap: 1.3em;
-
+    gap: 2.3em;
 }
+
+.our-prd-h1{
+    margin-bottom: 0.75em;
+    text-align: center;
+    background-color: #000;
+    width: 100%;
+    color: #1a1aff;
+}
+
+
 
 .grid-1-wrapper {
     /* height: 50.875em; */
@@ -307,9 +301,10 @@ body {
 .prod-1-img {
     width: 100%;
     height: 15.625em;
-    /* border-top-left-radius: 0.75em; */
-    /* border-top-right-radius: 14px; */
+    border-radius: 0.35rem;
+
 }
+
 
 /*======== Our Services Styling ========== */
 
@@ -325,7 +320,7 @@ body {
 }
 
 .service {
-    border: 3px solid rgba(0, 0, 0, 0.36);
+    /* border: 3px solid rgba(0, 0, 0, 0.36); */
     line-height: 1.5rem;
     border-radius: 0.5em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -333,23 +328,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.13rem;
     padding: 1.25em;
-    color: rgba(0, 0, 0, 0.36);
+    color: rgba(0, 0, 0, 0.56);
 }
-/* .service1 {
-    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
-}
-.service2 {
-    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
-    padding: 1.25em;
-}
-.service3 {
-    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
-    padding: 1.25em;
-}
-.service4 {
-    /* background-image: linear-gradient(to right, #1a1aff, #e60000); 
-    padding: 1.25em;
-} */
 
 .proj-img {
     width: 7rem;
@@ -358,22 +338,124 @@ body {
     border-radius: 1em;
 }
 
-
+/* =================================================== */
 /*------------ About us style  -------------------  */
-.about-us div {
-    color: rgb(240, 240, 255);
-    padding: 3em;    
-}
+/* =================================================== */
+
 
 .about-us {
-    background: rgb(0, 0, 0); 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    width: 90%;
+    /* border-left: 1px solid #0000004d; */
+    /* border-right: 1px solid #0000004d; */
+    margin: auto;
+    padding: 0.75em;
+}
+
+.about-us div {
+    /* /* color: rgb(240, 240, 255);  */
+    padding: 1.6em;    
+}
+
+.service-ul{
+    margin: 0em;
+}
+.service-ul li{
+    margin: 1.75em auto;
+
+}
+
+.office-address {
+    border: 2px dotted #e600009e;
+    background: rgb(10, 25, 140);
+    margin: 0.75em auto;
+    width: 50%;
+    color: #ffffff;
+    line-height: 1.57em;
+}
+
+.about-us .the-ceo {
+    /* border: 2px double #0ea04e; */
+    /* background: rgb(0, 0, 0); */
+    margin: 1em auto 1em;
+    color: rgb(20, 20, 25);
+}
+
+.about-us .the-ceo img {
+    width: 8.6em;
+    height: 8.6em;
+    border-radius: 50%;
+}
+
+.the-ceo figure {
+    display: flex;
+    align-items: center;  
+    justify-content: space-evenly; 
+}
+.the-ceo figure figcaption  {
+    display: flex;
+    align-items: center;  
+    justify-content: space-evenly; 
+}
+
+.about-us .the-ceo h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#ceo-close h2{
+    text-align: left;
+    text-align: left; 
+    line-height: 0;
+    margin-top: 0;
+}
+
+/* ----------Social-media-btn styling-------------------- */
+figcaption {
+    display: flex;
+    background: rgb(10, 20, 50);
+    padding: 1.75em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.35em;
+}
+
+figcaption a:first-child{
+    margin-left: 0;
+}
+figcaption a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1.5em;
+    text-align: center;
+    color: #fff;
+    transition: 1s;
+}
+
+figcaption a:hover {
+    transform: translateY(18px);
+}
+
+.fa-twitter {
+    font-size: 1em;
+}
+.fa-linkedin{
+    color: #0072b1;
+    font-size: 1.5em;
 }
 
 
 /* =========== Form Styling Starts ================== */
 .form-section {
-    background: #000;
-    margin: -1.55em;
+    /* background: #000; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    /* border-left: 1px solid #0000004d; */
+    /* border-right: 1px solid #0000004d; */
+    margin: auto;
     padding: 2em;
 }
 form {
@@ -381,14 +463,32 @@ form {
     flex-direction: column;
     background: #e60000;
     padding: 14px;
-    max-width:45%;
+    max-width:75%;
     margin: 22px auto;
     border-radius: 0.5em;
 }
  label {
-     margin-top: 16px;
+     margin-top: 19px;
  }
+input {
+    height: 2.25em;
+    padding: 0.75em;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(228, 238, 248);
+    background: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+  textarea {
+      border: none;
+      outline: none;
+      font-family: 'Ubuntu', sans-serif;
+      border-radius: 0.35rem;
+      padding: 1rem;
 
+  }
  .submit-btn {
      margin: 18px auto 0;
      width: 60%;
@@ -398,7 +498,7 @@ form {
      font-size: 1.2em;
      border: none;
      outline: none;
-     border-radius: 6em;
+     border-radius: 0.45em;
      cursor: pointer;
  }
 
@@ -408,9 +508,18 @@ form {
  footer {
      background: rgba(0, 0, 0, 0.85);
      color: rgb(200, 200, 255);
-     padding: 4em;
+     padding: 1em;
+     text-align: center;
  }
 
+
+
+
+
+
+
+
+ 
 @media only screen and (max-width:900px){
     .menu-togle {
         position: absolute;
@@ -482,10 +591,6 @@ form {
         display: none;
     }
 
-
-    
-     
-    
     .cta-wrapper .cta-1{
         line-height:1.65em; 
         color:#fff; 
@@ -549,6 +654,7 @@ form {
 
     /* ----------our product style --------------- */
     .container_our_product {
+        margin-top: 1.75em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -561,7 +667,7 @@ form {
     }
 
     .prod-1-img{
-        border-radius: 0;
+        border-radius: 0.3rem;
     }
     
     /* ========= ------our services styles-----======= */
@@ -592,6 +698,84 @@ form {
         height: 6rem;
         margin: auto;
     }
+    /* =================================================== */
+/*------------ About us style  -------------------  */
+/* =================================================== */
+
+.about-us {
+    border: 5px solid powderblue;
+    margin: 0%;
+    position: relative;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    width: 100%;
+    /* border-left: 1px solid #0000004d; */
+    /* border-right: 1px solid #0000004d; */
+    /* margin: auto; */
+}
+
+.about-overlay {
+    background-image: linear-gradient(to right, rgba(73, 3, 255, 0.4), rgba(19, 19, 222, 0.4)),  url("images/rooftile-bg.jpg");
+    color: #ffffff;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.abt-div-el{
+    /* width: 100%; */
+}
+
+
+
+.about-us .the-ceo {
+    /* background: rgb(0, 0, 0); */
+    margin: 1em auto 1em;
+    color: rgb(2, 2, 5);
+    width: 100%;  
+
+}
+
+.about-us .the-ceo img {
+    width: 8.6em;
+    height: 8.6em;
+    border-radius: 50%;
+}
+
+.the-ceo figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    justify-content: space-evenly; 
+}
+.the-ceo figure figcaption  {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.the-ceo figure figcaption a  {
+    margin-top: 1.25em;
+
+}
+
+.about-us .the-ceo h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#ceo-close h2{
+    text-align: left;
+    
+}
+
+.office-address{
+    width: 100%;
+}
+
+
 
 
 
@@ -599,20 +783,19 @@ form {
 .swiper {
     width: 85%;
     height: 22em;
-    z-index: -13;
+    z-index: -130;
     border-radius: 1em;
     margin-top: 1em;
 
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    background: #e60000;
-    padding: 14px;
-    min-width: 75%;
-    margin: 22px auto;
-    border-radius: 0.5em;
+    min-width: 100%;
+}
+
+.form-section {
+    background-image: linear-gradient(30deg, #1a1aff69, #0000ff4f ), url("images/black-roof-tile-seamless-vector-background.jpg");
+    width: 100%;
 }
 
 
