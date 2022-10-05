@@ -41,17 +41,20 @@ body {
     box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.35);
     display: flex;
     /* width: 100%; */
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: rgb(25, 45, 95) ;
     z-index: 999999;
 }
 
-
+.navlistdiv{
+    border: 2px solid turquoise;
+}
 
 .navlist {
     display: flex;
     align-items: center;
+    /* padding-left: 2em; */
 }
 
  .navlist li {
@@ -141,25 +144,7 @@ body {
     border: none;
 }
 
-.cta-1 button {
-    width: 190px;
-    height: 37px;
-    padding: 0.75em 1.5em;
-    margin: 2em 1em 0 1em;
-    border: none;
-    border-radius: 68px;
-    background: rgba(230, 0, 0, 0.94);
-    color: #fff;
-}
 
-.cta-1 button a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 1.4em;
-
-}
 /* =-=-=-=-=-=-=-=-=cta section styles stars-=-=-=-=-=-=-=-=-=-=- */
 
 .cta-sect {
@@ -192,6 +177,26 @@ body {
     padding: 1.5em;
      background: #1a1aff; text-align:center; 
     font-size: 1.5rem; 
+}
+
+.cta-1 button {
+    width: 190px;
+    height: 37px;
+    padding: 0.75em 1.5em;
+    margin: 2em 1em 0 1em;
+    border: none;
+    border-radius: 68px;
+    background: rgba(230, 0, 0, 0.94);
+    color: #fff;
+}
+
+.cta-1 button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+
 }
  
 /* -----==-=-====Slider_two styles starts here====-=-=-=-=-=-=-= */
@@ -264,7 +269,8 @@ body {
 }
 
 
-/* =================Our Product styles stars  ============== */
+/* =================
+Our Product styles stars  ============== */
 
 .our-prd {
     text-align: center;
@@ -273,11 +279,12 @@ body {
  
 
 .container_our_product {
+    margin: 0.45em auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 70%;
-    margin: auto;
-    gap: 2.3em;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 1.3em;
+    padding: 2em;
 }
 
 .our-prd-h1{
@@ -285,25 +292,124 @@ body {
     text-align: center;
     background-color: #000;
     width: 100%;
-    color: #1a1aff;
+    color: rgb(26, 26, 255);
 }
 
 
 
 .grid-1-wrapper {
-    /* height: 50.875em; */
-    margin: auto;
-    /* border: 3px solid #e60000; */
+    height: 250px;
+    position: relative;    
+    /* width: 250px; */
+    /* margin: auto; */
     /* border-radius: 0.75em; */
-
 }
+
 
 .prod-1-img {
     width: 100%;
-    height: 15.625em;
-    border-radius: 0.35rem;
-
+    height: 80%;
+    opacity: 1;
 }
+
+.img-overlay {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    left: 0%;
+    bottom: 50%;
+    width: 100%;
+    height: 0%;
+    background: #008CBA;
+    transition: 1.5s ease-in-out;
+    overflow: hidden;
+}
+
+.img-overlay a {
+    color: #eeeeff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+}
+
+.para-text {
+    text-align: center;
+    background: #1a1aff;
+    display: block;
+    margin-top: -0.15em; 
+    height: 20%;
+    padding: 0.75em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.grid-1-wrapper:hover .img-overlay {
+    opacity: 0.95;
+    height: 100%;
+    bottom: 0;
+}
+.grid-1-wrapper:hover .para-text {
+    opacity: 0.89;
+   
+}
+
+.slider_three p{
+    width: 50%;
+    margin: 2em auto;
+}
+
+
+
+
+/* XXXXXXXXXXXXXXXXXXXX----- Stone Tiles Style ----XXXXXXXXXXXXXXX */
+
+/*.stone-coated .img-stone-tiles {
+    width: 75%;
+    height: 20em;
+    margin: 1em auto;
+    background-image:  url("images/STONE-TILE.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.why-use-stone-coated {
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}*/
+
+.stone-coated .img-stone-tiles {
+    width: 75%;
+    height: 30em;
+    text-align: center;
+    color: #1a1aff;
+    margin:  auto;
+    border: 3px solid red;
+    background-image:  url("images/STONE-TILE.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.why-use-stone-coated {
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+.why-use {
+    width: 45%;
+    padding: 1em;
+    margin: auto;
+}
+
+.why-use img {
+    width: 100%;
+}
+
 
 
 /*======== Our Services Styling ========== */
@@ -311,10 +417,12 @@ body {
 .our-services {
     border-radius: 12px;
     width: 55%;
-    margin: 24px auto;
+    margin: 7em auto;
     line-height: 1.3;
+    
 }
 .our-services h1 {
+    margin: 1em;
     text-align: center;
     background-color: #e60000;
 }
@@ -337,6 +445,25 @@ body {
     margin: 0.65em;
     border-radius: 1em;
 }
+
+
+/*-------------------- not a rocket science------------------ */
+.estimate {
+    background-image: url("images/alucoil_1.jpg"), linear-gradient(45deg, rgba(26, 26, 255, 0.212), rgba(26, 26, 255, 0.337));
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    background-size: cover;
+    font-size: 1.3em;
+    font-weight: 700;
+    width: 100%;
+    border: 6px solid red;
+}
+
+
+
+
 
 /* =================================================== */
 /*------------ About us style  -------------------  */
@@ -411,7 +538,7 @@ body {
 }
 
 /* ----------Social-media-btn styling-------------------- */
-figcaption {
+.figcap {
     display: flex;
     background: rgb(10, 20, 50);
     padding: 1.75em;
@@ -420,10 +547,10 @@ figcaption {
     border-radius: 0.35em;
 }
 
-figcaption a:first-child{
+.figcap a:first-child{
     margin-left: 0;
 }
-figcaption a {
+.figcap a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -435,7 +562,7 @@ figcaption a {
     transition: 1s;
 }
 
-figcaption a:hover {
+.figcap a:hover {
     transform: translateY(18px);
 }
 
@@ -517,10 +644,10 @@ input {
 
 
 
-
+ 
 
  
-@media only screen and (max-width:900px){
+@media only screen and (max-width: 950px){
     .menu-togle {
         position: absolute;
         top: 1em;
@@ -652,32 +779,71 @@ input {
 
     } 
 
+    .slider_three p{
+        text-align: justify;
+        width: 100%;
+        margin: 2em auto;
+    }
+
+    /* XXXXXXXXXXXXXXXXXXXX----- Stone Tiles Style ----XXXXXXXXXXXXXXX */
+
+.stone-coated .img-stone-tiles {
+    width: 75%;
+    height: 30em;
+    margin:  auto;
+    background-image:  url("images/STONE-TILE.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.why-use-stone-coated {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+.why-use {
+    width: 95%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.why-use img {
+    width: 100%;
+    text-align: justify;
+}
+.why-use ul li {
+    margin-top: 2em;
+    
+}
     /* ----------our product style --------------- */
     .container_our_product {
         margin-top: 1.75em;
-        display: flex;
+        grid-template-columns: 1fr;
+        /* display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        /* border: 2px solid powderblue; */
+        justify-content: center; */
     }
 
     .grid-1-wrapper {
-        border: none;
-
-        
+        border: 2px solid powderblue;
+        width: 300px;
+        margin: auto;
+        overflow: hidden;
     }
 
     .prod-1-img{
         border-radius: 0.25rem;
     }
     
-    /* ========= ------our services styles-----======= */
+    /* ========= our services styles ======= */
     
     .our-services {
         border-radius: 12px;
         line-height: 1.3;
-        width: 75%;
+        width: 300px;
         margin: 24px auto;
         line-height: 1.3;
     }
@@ -723,12 +889,6 @@ input {
     
 }
 
-.abt-div-el{
-    /* width: 100%; */
-}
-
-
-
 .about-us .the-ceo {
     /* background: rgb(0, 0, 0); */
     margin: 1em auto 1em;
@@ -743,7 +903,7 @@ input {
     border-radius: 50%;
 }
 
-.the-ceo figure {
+/* .the-ceo figure {
     display: flex;
     align-items: center;
     flex-direction: column;  
@@ -761,7 +921,7 @@ input {
 .the-ceo figure figcaption a  {
     margin-top: 1.25em;
 
-}
+} */
 
 .about-us .the-ceo h2 {
     text-align: center;
@@ -776,6 +936,47 @@ input {
 .office-address{
     width: 100%;
 }
+
+/* ----------Social-media-btn styling-------------------- */
+.figcap {
+    display: flex;
+    background: rgb(10, 20, 50);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.35em;
+}
+
+.figcap a h4 {
+    display: none;
+}
+
+.figcap a:first-child{
+    margin-left: 0;
+}
+.figcap a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1.5em;
+    text-align: center;
+    color: #fff;
+    transition: 1s;
+}
+
+.figcap a:hover {
+    transform: translateY(18px);
+}
+
+.fa-twitter {
+    font-size: 1em;
+}
+.fa-linkedin{
+    color: #0072b1;
+    font-size: 1.5em;
+}
+
 
 
 
@@ -799,7 +1000,5 @@ form {
     background-image: linear-gradient(30deg, #1a1aff69, #0000ff4f ), url("images/black-roof-tile-seamless-vector-background.jpg");
     width: 100%;
 }
-
-
 
 }

@@ -4,6 +4,7 @@ let body = document.querySelector("body");
 let floatArrowRight = document.querySelector(".fa-arrow-right");
 let floatEl = document.querySelector(".cta-side");
 let faArrowLeft = document.querySelector(".fa-arrow-left");
+let floatCaontact = document.querySelector(".float-contact");
 
 menuIcon.addEventListener('click', function(){
     navUl.classList.toggle('active')
@@ -14,12 +15,5 @@ window.addEventListener('click', function(e) {
         navUl.classList.remove('active');
     }
 })
-
-floatArrowRight.addEventListener('click', ()=>{
-    // console.log("success");
-    floatEl.style.position = ''
-    faArrowLeft.style.display = 'block
-})
-
 
 

@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, rgba(23, 43, 100, 0.35), rgba(10, 14, 97, 0.5) ), url("images/std-hs-beauty.jpg");
+    background-image: linear-gradient(to right, rgba(23, 43, 100, 0.3), rgba(10, 14, 107, 0.25) ), url("images/std-hs-nice.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -48,7 +48,7 @@ body {
     color: #fff;
     border-radius: 0.61em;
     padding: 1em;
-    width: 350px;
+    width: 35%;
     box-shadow: 0 0 0 100vmax  rgba(0, 0, 0, 0.35);
     transition: 1s;
     animation: animateAccord 0.2s ease-in-out;
@@ -102,7 +102,7 @@ body {
 .accordion .content .answer {
     margin: 0.25em 0;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     height: 0;
     transition: 0.5s;
 }
@@ -119,4 +119,16 @@ body {
 }
 .content.active .question::after{
     content: "-";
+}
+
+@media screen and (max-width: 750px) {
+     .accordion {
+        position: relative;
+        bottom: -5%;
+        background: #F15;
+        color: #fff;
+        width: 70%;
+        transition: 1s;
+    }
+    
 }

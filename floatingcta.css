@@ -140,10 +140,9 @@ margin-bottom: 0.25rem;
 
 }
 
-.top {
-    background:   #1a1aff;
-   
-   }
-   
+#dtop {
+    display: none;
+
+}
 
 }
