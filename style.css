@@ -321,7 +321,8 @@ Our Product styles stars  ============== */
     width: 100%;
     height: 0%;
     background: #008CBA;
-    transition: 1.5s ease-in-out;
+    transition: height 0.003s;
+    /* transition-timing-function: cubic-bezier(0.075, 0.072, 0.965, 0.35); */
     overflow: hidden;
 }
 
