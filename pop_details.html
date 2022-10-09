@@ -23,12 +23,103 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="prd-details.css">
     <title>Produccts</title>
+
+    <style>
+      * {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+  height: 5rem;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #1a1aff;
+  font-weight: bold;
+  font-size: 1.75rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    </style>
     
 </head>
 <body>
+  <div class="contacts"><a href="tel:"></a></div>
     <!-- color theme: "blue, red, white" -->
     <nav class="navbar" id="nav-bar">
-        <a class="logo-anchor" href="#home"
+        <a class="logo-anchor" href="index.html"
           ><img
             src="images\large logo.png"
             alt="logo-img"
@@ -47,10 +138,12 @@
           <span class="bar bar2"></span>
           <span class="bar bar3"></span>
         </div>
+      <div id="menu_x">X</div>
+
   
         <div class="navlistdiv">
           <ul id="nav-ul" class="navlist">
-            <li id="home" class="active-link"><a href="#home">Home</a></li>
+            <li id="home" class="active-link"><a href="index.html">Home</a></li>
             <li><a href="#container_our_product">Products</a></li>
             <li><a href="#our-services">Services</a></li>
             <li><a href="#about-us">About Us</a></li>
@@ -63,29 +156,113 @@
         <div class="hero">
             <p>Our company specializes in Aluminum coil/Corrugated Aluminum Roofing/Stone Tiles/Roofing Accessories.
             </p>
-          </div>    
+          </div> 
+          
+          <a style="margin: 1rem; text-decoration: none; font-size: 1.25rem; background: #dd0004; z-index: 123; color: #fff; padding: 0.25em 0.75em; position: sticky; top: 16%; border-radius: 0.35rem;" href="index.html">Home</a>
+
+
+
+        <!-- tttttttttttttttttttttttttttttttttttttttttttttttt -->
+         <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images\pop-pexels-photo.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images\pop-pexels-photo-2343468.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images\pop-image-19.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images\pop-image-12.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images\pop-image-18.webp" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images\pop-image-4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+      <img src="images\our-pop-services.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images\pop-pexels-photo.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images\pop-pexels-photo-2343468.jpeg  " style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images\pop-image-19.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images\pop-image-12.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images\pop_img1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images\pop-image-4.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images\our-pop-services.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div> 
+        <!-- eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
       
           <section>
             <div class="product-spec">
+              
               <img src="images\pop-sealing.jpg" alt="prd-img">
             <div class="spec-dtl">
-              <h1>THE P.O.P CASTING & INSTALLTIONS</h1>
-                  <p><span class="p-span1">Thicknesses:</span><span class="p-span2">0.45 to 1mm.</span></p>
-                  <p><span class="p-span1">width:</span><span>1000mm 0r 1 meter.</span></p>
-                  <p><span class="p-span1">Length:</span><span>5meters-10 meters.</span></p>
-                  <p><span class="p-span1">Surface Treatment:</span><span>Durable Oven-Baked Color Coated.</span></p>
-                  <p><span class="p-span1">Types available:</span><span>Short Span And Long Span.</span></p>
-                  <p><span class="p-span1">The Short Span is:</span><span>2 to 3 meters long.</span></p>
-                  <p><span class="p-span1">The Long Span is:</span><span>5 t0 12 meters long.</span></p>
-                  <p class="your-request">Specifications shall be produced at your request.</p>
+              <h1>THE Plaster of Paris (P.O.P) CASTING & INSTALLTIONS</h1>
+                  <p>
+                    The POP when creatively designed and installed can offer a breath-taking beauty and luxury to your home, hotels or real estate building projects. 
+                    Plaster of Paris  ceilings are awesomely durable and can resist wears and tears for many years. We apply POP to mesh in order to keep the ceilling very strong and durables. POP is more affordable than gypsum boards and so many other ceilling decoration materials that offer a closer easthetic look . We have from simple to sophisticated, intricate designs of POP that will offer awesome beauty to your building projects. 
+                    <br><div style="background: rgb(34, 34, 235); padding: 1rem; color: #fff;">
+                    The good thing about this is that our POP designs, castinng and installations are very affordable. While you are thinking about your ceiling and its cost, don't fail to put a call across to our company, the cost may just be under your financial capability, why go for something lower when you can easily grab a design from us and thank goodness you called us for INQUIRIES: <br> 
+                    <button><a href="https://api.whatsapp.com/send?phone=+2347062080855&text=Hello, can we chat on how I can get more best deals and best POP design for my building?">INQUIRY</a></button>
+                    </div>
+                    POP ceilings are available in a wide range of colors, styles, and sizes to make your living room appear larger and more luxurious, with styles ranging from modern to complicated classic.
+                    
+                    Before we begin design, we check that the distance between the floor and the ceiling slab level is sufficient to support every light and intricate parts of the ceilling . Our POP designs are determined by the lighting plan, which we must determine ahead of time.
+                    
+                    Here are 20 eye-catching ceiling design ideas for your living room to get you started:</p>
                   <button><a href="">INQUIRY</a></button>
             </div>
-            <div class="more">
+            <!-- <div class="more">
               <h2>Why you may consider The Corrugated Aluminum Step Tiles for your Projects</h2>
               <p>
               The step tiles corrugated aluminum roofing sheet is a great and very reliable roofing material. It durability is more than 40 years, thanks to the oven baked colour coated surface finishing. They come in  different properly coated beautiful colours. The step tiles aluminum roofing sheets have good mechanical toughness, fire and water resistance, highly resilience to hash weather. As a very good roofing sheet step tiles meets the need for beauty and strength for all your roofing applications ranging from personal building to all forms of commercial building roofing needs. When neatly installed by our well trained profeesionals, Step tiles Corrugated aluminum roofing sheets give a very satisfying luxury looks and nice fitting for your construction projects.
             </p>
-            </div>
+            </div> -->
 
             <div class="related_prd">
               <div class="related_img">
@@ -126,20 +303,60 @@
               </a> -->
               </div>
           </div>
-
-            </div>
           </div>
-
-
+          </div>
           </section>
-      
           <footer>
+            <div>
+              <h3>Products:</h3>
+            <ul>
+              <li><a href="metcoppo.html">Metcoppo</a></li>
+              <li><a href="stone_tiles.html">Stone-Tiles</a></li>
+              <li><a href="pop_details.html">P.O.P</a></li>
+              <li><a href="mantra.html">Mantra</a></li>
+              <li><a href="aluminum_coil.html">Aluminum coils</a></li>
+              <li><a href="prd_datails.html">Step Tiles</a></li>
+              <li><a href="roofing_accessory.html">Roofing Accessories</a></li>
+              <li><a href="gutters_for_d_roof.html">Roofing Gutter</a></li>
+            </ul>
+            </div>
             <p>
               A website of DonJiokeson Investment Limited copyright@Alright reserved,
               no part of this website may be duplicated by any third-party or entity
               for any purpose. powered by: CreativeDad web Consult. Ent.
             </p>
           </footer>
-    
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+} 
+    </script>
 </body>
 </html>

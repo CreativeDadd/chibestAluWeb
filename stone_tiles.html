@@ -23,12 +23,24 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="prd-details.css">
     <title>Produccts</title>
+    <style>
+
+        #nice-hs {
+          width: 40rem;
+        }
+      @media only screen and (max-width: 750px) {
+        #nice-hs {
+          width: 100%;
+        }
+        
+      }
+    </style>
     
 </head>
 <body>
     <!-- color theme: "blue, red, white" -->
     <nav class="navbar" id="nav-bar">
-        <a class="logo-anchor" href="#home"
+        <a class="logo-anchor" href="index.html"
           ><img
             src="images\large logo.png"
             alt="logo-img"
@@ -47,10 +59,12 @@
           <span class="bar bar2"></span>
           <span class="bar bar3"></span>
         </div>
+        <div id="menu_x">X</div>
+
   
         <div class="navlistdiv">
           <ul id="nav-ul" class="navlist">
-            <li id="home" class="active-link"><a href="#home">Home</a></li>
+            <li id="home" class="active-link"><a href="index.html">Home</a></li>
             <li><a href="#container_our_product">Products</a></li>
             <li><a href="#our-services">Services</a></li>
             <li><a href="#about-us">About Us</a></li>
@@ -63,28 +77,18 @@
         <div class="hero">
             <p>Our company specializes in Aluminum coil/Corrugated Aluminum Roofing/Stone Tiles/Roofing Accessories.
             </p>
-          </div>    
+          </div>  
+          
+          <a style="margin: 1rem; text-decoration: none; font-size: 1.25rem; background: #dd0004; z-index: 123; color: #fff; padding: 0.25em 0.75em; position: sticky; top: 16%; border-radius: 0.35rem;" href="index.html">Home</a>
       
           <section>
             <div class="product-spec">
               <img src="images\STONE-TILE.jpg" alt="prd-img">
             <div class="spec-dtl">
-              <h1>The Metcoppo Aluminum Roofing Sheet</h1>
-                  <p><span class="p-span1">Thicknesses:</span><span class="p-span2">0.45 to 1mm.</span></p>
-                  <p><span class="p-span1">width:</span><span>1000mm 0r 1 meter.</span></p>
-                  <p><span class="p-span1">Length:</span><span>5meters-10 meters.</span></p>
-                  <p><span class="p-span1">Surface Treatment:</span><span>Durable Oven-Baked Color Coated.</span></p>
-                  <p><span class="p-span1">Types available:</span><span>Short Span And Long Span.</span></p>
-                  <p><span class="p-span1">The Short Span is:</span><span>2 to 3 meters long.</span></p>
-                  <p><span class="p-span1">The Long Span is:</span><span>5 t0 12 meters long.</span></p>
-                  <p class="your-request">Specifications shall be produced at your request.</p>
+              <h1>The Stone Coated Roofing Tiles.</h1>
+              <img src="images\nice-hs.jpg" alt="house-img" id="nice-hs">
+                  <p>The beauty, longevity and luxurious appeals of stone coated roofing matel tiles is second to none.</p>
                   <button><a href="">INQUIRY</a></button>
-            </div>
-            <div class="more">
-              <h2>Why you may consider The Corrugated Aluminum Step Tiles for your Projects</h2>
-              <p>
-              The step tiles corrugated aluminum roofing sheet is a great and very reliable roofing material. It durability is more than 40 years, thanks to the oven baked colour coated surface finishing. They come in  different properly coated beautiful colours. The step tiles aluminum roofing sheets have good mechanical toughness, fire and water resistance, highly resilience to hash weather. As a very good roofing sheet step tiles meets the need for beauty and strength for all your roofing applications ranging from personal building to all forms of commercial building roofing needs. When neatly installed by our well trained profeesionals, Step tiles Corrugated aluminum roofing sheets give a very satisfying luxury looks and nice fitting for your construction projects.
-            </p>
             </div>
             <!-- <div style="margin: 1rem;">Related Products</div> -->
             <div class="related_prd">
@@ -130,12 +134,27 @@
           </section>
       
           <footer>
+
+            <div>
+              <h3>Products:</h3>
+            <ul>
+              <li><a href="metcoppo.html">Metcoppo</a></li>
+              <li><a href="stone_tiles.html">Stone-Tiles</a></li>
+              <li><a href="pop_details.html">P.O.P</a></li>
+              <li><a href="mantra.html">Mantra</a></li>
+              <li><a href="aluminum_coil.html">Aluminum coils</a></li>
+              <li><a href="prd_datails.html">Step Tiles</a></li>
+              <li><a href="roofing_accessory.html">Roofing Accessories</a></li>
+              <li><a href="gutters_for_d_roof.html">Roofing Gutter</a></li>
+            </ul>
+            </div>
+
             <p>
               A website of DonJiokeson Investment Limited copyright@Alright reserved,
               no part of this website may be duplicated by any third-party or entity
               for any purpose. powered by: CreativeDad web Consult. Ent.
             </p>
           </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
