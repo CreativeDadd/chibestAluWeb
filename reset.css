@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #79031D;
+    --primary-colorlight: rgba(121, 3, 29, 0.25);
+    --secondary-color: #000407;
+    --secondary-colorlight: rgba(0, 4, 7, 0.5);
+    --usecase-color: #f5f7f7;
+    --design-color: #EDB518;
+    --font-bai: 'Bai Jamjuree', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-satisfy: 'Satisfy', cursive;
+    
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* h2, h3, h4, h5, h6, h1 {
+    margin: 1em 0;
+} */
+/* border-radius */
+.card-br {
+    border-radius: 7.5px;
+}
+
+.btn a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    letter-spacing: 1.2px;
+
+
+}
+
+.btn {
+    width: 170px;
+    /* height: 35px; */
+    border: none;
+    background: #EDB518;
+    padding: 6px 16px;
+    margin-top: 12px;
+    border-radius: 4px;
+}
+
+

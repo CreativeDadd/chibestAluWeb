@@ -5,82 +5,37 @@
     <meta http-equiv="X-UA-Compactible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,700;0,900;1,200&display=swap" rel="stylesheet"> 
-    <script
-      src="https://kit.fontawesome.com/9d88e91102.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <script src="https://kit.fontawesome.com/9d88e91102.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="floatingcta.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="images\large logo.png"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/x-icon" href="images\large logo.png"/>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="slider.css"> -->
     <title>Chibestalu</title>
   </head>
-
   <body>
-
-    <div style="margin-top: 3rem; background: green; height: 200px; width: 200px;" class="top-container">
-      <span>Phone:0804646647</span>
-      <span>eMail: admin@aludil.com</span>
-    </div>
-
-    <!-- color theme: "blue, red, white" -->
-    <nav class="navbar" id="nav-bar">
-      <a class="logo-anchor" href="#home"
-        ><img
-          src="images\large logo.png"
-          alt="logo-img"
-          id="logo-img"
-          class="logo-img"
-        />
-        <h4 class="logo-name"  style="color: #fff">
-          <span Style="color: #DD0004; font-size: 1.3rem;">DonJiokeson</span
-          >Investment Ltd.
-        </h4>
-      </a>
-      <!-- <a class="logo-1" href="#home"><span class="span-1 span-logo"></span><span class="span-2 span-logo"></span><span class="span-d">D</span>IL</a> -->
-      <!-- armburger menu -->
-      <div id="menu-icon" class="menu-togle menu-close" >
-        <span class="bar bar1"></span>
-        <span class="bar bar2"></span>
-        <span class="bar bar3"></span>
-      </div>
-      <div id="menu_x">X</div>
-
-      <div class="navlistdiv">
-        <ul id="nav-ul" class="navlist">
-          <li id="home" class="active-link"><a href="index.html">Home</a></li>
-          <li><a href="#container_our_product">Products</a></li>
+    
+    <header>
+      <nav class="navbar" id="nav-bar">
+        <a class="logo-anchor" href="#Home">
+          <img src="images\large logo.png" alt="logo-img" id="logo-img" class="logo-img"/>
+          <h3>DonJiokeson Investment Ltd.</h3>
+        </a>
+        <ul class="nav_menu">
+          <li><a href="#Home">Home</a></li>
           <li><a href="#our-services">Services</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <!-- <li><a href="#">Blog</a></li> -->
-          <!-- <li><a href="#">Contact Us</a></li> -->
+          <li><a href="#container_our_product">Productss</a></li>
+          <li><a href="#about-us">About</a></li>   
+          <li><a href="#blog.html">blogs</a></li>
+          <li style="text-align: center;"><a class="btn" href="#main-prices">Price</a></li>
         </ul>
-      </div>
-      <div class="top_contact">
-        <p class="txt_email">
-          <i class="fa-solid fa-envelope"></i>dil@gmail.com
-        </p>
-        <p class="t_phone">
-          <i class="fa-solid fa-phone"></i
-          ><a href="tel:07062080855">07062080855</a>
-        </p>
-      </div>
+        <div class="toggle"><i class="fas fa-bars"></i></div>
     </nav>
 
 
-
-     
-    <!------floating cta fixed buttons------->
-            
-      <div  class="cta-side">
+    <!------floating cta fixed buttons------->    
+   <div  class="cta-side">
       <ul class="float-contact">
         <!-- <i class="fa-solid fa-arrow-left"></i> -->
       <!-- <i class="fa-solid fa-arrow-right"></i> -->
@@ -116,53 +71,165 @@
           <span>SMS</span>
         </a>
         </li>
-        <li class="enquiry-desktop">
+        <li style="display: none;" class="enquiry-desktop">
           <a href="#form-section">
           <i class="fa-regular fa-comment"></i><br> 
           <span>enquiry Form</span>
         </a>
         </li>
-        <li class="top" id="dtop" >
-          <a href="#">          
-          <i class="fa-solid fa-chevron-up"></i><br>
-          <span>Top</span>
-          </a>
-        </li>
       </ul>
   </div>
+  <!-- end cta -->
+    </header>
 
 
-
-    <!-- slidders container -->
-
-    <div class="slider-container" id="slider_wrapper">
-      <!---------- slider1 ---------->
-      <div class="slider_one">
-        <!-- slider chevron -->
-        <i class="fa-solid fa-chevron-left"></i>
-        <i class="fa-solid fa-chevron-right"></i>
-
-        <h1>You Can <span style="color: #e60000
-          ;">Bank on Us</span>.</h1>
-        <ul>
-          <h2 style="color: #FFE34D
-          ;">Do you need quality:</h2>
-          <li>Corugated Aluminum Roofing Sheets?</li>
-          <li>Roofing Gutters</li>
-          <li>Beautiful P.O.P?</li>
-          <li>Roofing Accessories?</li>
-          <li>Roofing Professionals?</li>
-        </ul>
-        <a href="https://chatwith.io/s/donjiokeson"><button class="btn-us action-btn"><i style="margin-right: 0.5em;" class="fa-brands fa-whatsapp"></i>WhatsApp</button></a>
-        <h1 class="company-name" style="color: #fff">
-          <span Style="color: red; font-size: 1.5rem;">Don.Jiokeson</span
-          ><br>Investment Ltd.
-        </h1>
-
-          </div>
+    
+    <!-- Hero section -->
+    <!-- <section class="hero"> -->
+    <div id="Home" class="hero-section">
+      <div class="caption-div">
+        <h1>Welcome to <span style="color: #79031D;">DonJiokeson</span>  <span style="color: #EDB518;">Investment</span>Limimited</h1>
+        <p>We Sell and Install High quality and global standard roofing materials.
+         We know what to do and we have what it takes.
+        </p>
       </div>
-      <!----------Slider 1 ends here -->
 
+      <!-- Hero swipe/slide show-->
+      <div class="cont">
+        <div class="img-wrap">
+          <img src="images\lg-span-roof.png" alt="">
+          <div class="capt">
+            <h3 style="margin-bottom: 12px;">All Your Jobs are Neatly Done!</h3>
+          <p>Our Team is made up of experienced, updated and well equiped workforce to neatly deliver your Job on time.</p>
+          <button class="btn" type="menu"><a href="#">Get Latest Prices</a></button>
+          <button class="btn" type="menu"><a href="#">Request Detailed Estimate</a></button>
+          </div>
+        </div>
+
+        <div class="img-wrap">
+          <img src="images\first-img.jpg" alt="">
+          <div class="capt">
+            <h3 style="margin-bottom: 12px;">Orders Are Processed With Speed!</h3>
+          <p>Our Team is made up of experienced, updated and well equiped workforce to neatly deliver your Job on time.</p>
+          <button class="btn" type="menu"><a href="#">Get Latest Prices</a></button>
+          <button class="btn" type="menu"><a href="#">Request Detailed Estimate</a></button>
+          </div>
+        </div>
+
+        <div class="img-wrap">
+          <img src="images\new-roofing3.png" alt="">
+          <div class="capt">
+            <h3 style="margin-bottom: 12px;">All Your Jobs are Neatly Done!</h3>
+          <p>Our Team is made up of experienced, updated and well equiped workforce to neatly deliver your Job on time.</p>
+          <button class="btn" type="menu"><a href="#">Get Latest Prices</a></button>
+          <button class="btn" type="menu"><a href="#">Request Detailed Estimate</a></button>
+          </div>
+        </div>
+
+        <div class="img-wrap ">
+          <img src="images\new-roofing4.jpg" alt="">
+          <div class="capt">
+            <h3 style="margin-bottom: 12px;">All Your Jobs are Neatly Done!</h3>
+          <p>Our Team is made up of experienced, updated and well equiped workforce to neatly deliver your Job on time.</p>
+          <button class="btn" type="menu"><a href="#">Get Latest Prices</a></button>
+          <button class="btn" type="menu"><a href="#">Request Detailed Estimate</a></button>
+          </div>
+        </div>
+
+        <div class="img-wrap">
+          <img src="images\new-roofing8.jpg" alt="">
+          <div class="capt">
+            <h3 style="margin-bottom: 12px;">All Your Jobs are Neatly Done!</h3>
+          <p>Our Team is made up of experienced, updated and well equiped workforce to neatly deliver your Job on time.</p>
+          <button class="btn" type="menu">
+              <a href="https://api.whatsapp.com/send?phone=+2347062080855&text=Hello, I am (ur name) can we chat so I can get Detailed Estimate for materials for my roofing project?">
+              Request Detailed Estimate
+              </a>
+          </button>
+          <button class="btn" type="menu"><a href="#">Get Latest Price</a></button>
+          </div>
+        </div>
+
+        <a onclick="plusSlides(-1)"class="prev">&larr;</a>
+        <a onclick="plusSlides(1)" class="next">&rarr;</a>
+
+      </div>
+    </div>
+<!-- /////////// HERO SLIDE ENDS /////////////// -->
+
+<!-- //////////PRODUCTS PRICES LISTING ////////// -->
+<section id="main-prices" class="price-section">
+  <h3>Check Out The Prices of Our Products Below.</h3>
+  <p class="nego"><code>Please note that these prices are negotiable since prices change from time to time.</code></p>
+  <div class="price-main">
+  <div class="container_our_prices">
+      <img src="images\corrugated-span2.jpg" alt="mantra">
+      <div class="price_details">
+        <h4 style="margin: 0;">Mantra: available</h4>
+        <p>Colors: All colors are available</p>
+        <p>Thickness: 0.45mm <b> Price: ₦2,600 per Meter.</b></p>
+        <p>Thickness: 0.45mm <b>Price: ₦2,600 per Meter.</b></p>        
+      </div>
+  </div>
+  <div class="container_our_prices">
+      <img src="images\metcoppo-relared.jpg" alt="mantra">
+      <div class="price_details">
+        <h4 style="margin: 0;">Mantra: available</h4>
+        <p>Colors: All colors are available</p>
+        <p>Thickness: 0.45mm <b> Price: ₦2,600 per Meter.</b></p>
+        <p>Thickness: 0.45mm <b>Price: ₦2,600 per Meter.</b></p>        
+      </div>
+  </div>
+  <div class="container_our_prices">
+      <img src="images\steptiles2.jpg" alt="mantra">
+      <div class="price_details">
+        <h4 style="margin: 0;">Mantra: available</h4>
+        <p>Colors: All colors are available</p>
+        <p>Thickness: 0.45mm <b> Price: ₦2,600 per Meter.</b></p>
+        <p>Thickness: 0.45mm <b>Price: ₦2,600 per Meter.</b></p>        
+      </div>
+  </div>
+  <div class="container_our_prices">
+      <img src="images\STONE-TILE.jpg" alt="mantra">
+      <div class="price_details">
+        <h4 style="margin: 0;">Mantra: available</h4>
+        <p>Colors: All colors are available</p>
+        <p>Thickness: 0.45mm <b> Price: ₦2,600 per Meter.</b></p>
+        <p>Thickness: 0.45mm <b>Price: ₦2,600 per Meter.</b></p>        
+      </div>
+  </div>
+  <div class="container_our_prices">
+      <img src="images\gutter2.jpg" alt="mantra">
+      <div class="price_details">
+        <h4 style="margin: 0;">Mantra: available</h4>
+        <p>Colors: All colors are available</p>
+        <p>Thickness: 0.45mm <b> Price: ₦2,600 per Meter.</b></p>
+        <p>Thickness: 0.45mm <b>Price: ₦2,600 per Meter.</b></p>        
+      </div>
+  </div>
+  <div class="container_our_prices">
+      <img src="images\Gutters1.jpg" alt="mantra">
+      <div class="price_details">
+        <h4 style="margin: 0;">Mantra: available</h4>
+        <p>Colors: All colors are available</p>
+        <p>Thickness: 0.45mm <b> Price: ₦2,600 per Meter.</b></p>
+        <p>Thickness: 0.45mm <b>Price: ₦2,600 per Meter.</b></p>        
+      </div>
+  </div>
+  <div class="container_our_prices">
+      <img src="images\ACCESSORIES-IMG.jpg" alt="mantra">
+      <div class="price_details">
+        <h4 style="margin: 0;">Mantra: available</h4>
+        <p>Colors: All colors are available</p>
+        <p>Thickness: 0.45mm <b> Price: ₦2,600 per Meter.</b></p>
+        <p>Thickness: 0.45mm <b>Price: ₦2,600 per Meter.</b></p>        
+      </div>
+  </div>
+</div>
+</section>
+
+
+      <section>
       <!-- Best Experience with us: -->
       <div class="cta-sect">
         <div class="cta-wrapper">
@@ -184,9 +251,11 @@
               <img class="cta-img" src="images\alu-coil-wh.jpg" alt="step-tiles">
               <img class="cta-img" src="images\corrugated-span2.jpg"alt="long-span-mantra">
           </div>
-      </div>
+               </div>
+      </section>
 
       <!-------- Slider-2 starts here --------->
+      <section>
       <div class="slider_two" id="slider-two">
         <div class="swipe_msg_two">
           <h2>We Know How to Do it Better.</h2>
@@ -231,19 +300,21 @@
     
   </div>
   <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+  <!-- <div class="swiper-pagination"></div> -->
 
   <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <!-- <div class="swiper-button-prev"></div> -->
+  <!-- <div class="swiper-button-next"></div> -->
 
         <!-- <img src="images\gerald-many-bty.jpg" alt=""> -->
 
       </div>
     </div>
     <!------ slide-2 ends here-------->
+  </section>
 
-    <!----- Slider_three starts here----->
+    <section>
+          <!----- Slider_three starts here----->
     <div class="slider_three">
       <div class="swipe_msg_three">
         <h2>Your Building Project Deserves the Best Final Touch.</h2>
@@ -261,6 +332,7 @@
 
       </div>
     </div>
+    </section>
 
     <!-----------The stone coated steel roof tile------- -->
     <section class="stone-coated">
@@ -303,10 +375,10 @@
     <!-- -----------stone coated ends ------------ -->
 <hr>
     <!-------- Our Products ----->
-<h1 class="our-prd-h1">Our Products</h1>
+<h1  class="our-prd-h1">Our Products</h1>
 
 
-    <section class="container_our_product" id="container_our_product">
+    <section style="margin-top: 3rem;" class="container_our_product" id="container_our_product">
 
       <!-- ALUMINUM STEP TILES -->
       <div class="grid-1-wrapper">
@@ -361,6 +433,7 @@
         </div>
         </div>
       </div>
+      
 
       <!-- MANTRA -->
       <div class="grid-1-wrapper">
@@ -479,9 +552,9 @@
         Roofing Renovations and Repairs
         Accessories, Such as nails, SCrews, Gutters, Gum, etc.
       </p>
-      <div class="estimate">
+      <!-- <div class="estimate">
         Calculating and estimation of the quality and the quantities of roofing materials you need should not be a rocket science, therefore, you can click on any of thr contact buttons and you will get the latest price of the total materials you need for your project.
-      </div>
+      </div> -->
     </section>
 
     <!---------------- About Us Starts Here -------------->
@@ -584,6 +657,7 @@
       </div>
     <!-- </div> -->
     </section>
+    
 
 
 <!-- ++++++++++++++++++++++++++++++++++ -->
@@ -596,7 +670,7 @@
         <label for="Phone-num">Phone Number</label>
         <input
           id="Phone-num"
-          type="number"
+          type="text"
           placeholder="whatsApp Number"
           required
         />
@@ -609,7 +683,7 @@
         />
         <!-- <select name="select-btn" id="select">aluminium</select> -->
         <label for="">Tell Us The Product You Need: </label>
-        <textarea name="order" id="oders" cols="27" rows="5"></textarea>
+        <textarea name="order" id="oders" cols="15" rows="2"></textarea>
         <button class="submit-btn" type="submit">Submit</button>
       </form>
     </section>
@@ -679,7 +753,9 @@
 
 
     </script>
-    
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> 
+<!-- <script src="slider.js"></script> -->
+<script src="heroslider.js"></script>
+
   </body>
 </html>

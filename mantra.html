@@ -21,51 +21,86 @@
       href="images\large logo.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="prd-details.css">
     <title>Produccts</title>
     
 </head>
 <body>
     <!-- color theme: "blue, red, white" -->
-    <nav class="navbar" id="nav-bar">
-        <a class="logo-anchor" href="#home"
-          ><img
-            src="images\large logo.png"
-            alt="logo-img"
-            id="logo-img"
-            class="logo-img"
-          />
-          <h4 class="logo-name"  style="color: #fff">
-            <span Style="color: #DD0004; font-size: 1.3rem;">DonJiokeson</span
-            >Investment Ltd.
-          </h4>
+    <header>
+      <nav class="navbar" id="nav-bar">
+        <a class="logo-anchor" href="#Home">
+          <img src="images\large logo.png" alt="logo-img" id="logo-img" class="logo-img"/>
+          <h3>DonJiokeson Investment Ltd.</h3>
         </a>
-        <!-- <a class="logo-1" href="#home"><span class="span-1 span-logo"></span><span class="span-2 span-logo"></span><span class="span-d">D</span>IL</a> -->
-        <!-- armburger menu -->
-        <div id="menu-icon" class="menu-togle menu-close" >
-          <span class="bar bar1"></span>
-          <span class="bar bar2"></span>
-          <span class="bar bar3"></span>
-        </div>
-  
-        <div class="navlistdiv">
-          <ul id="nav-ul" class="navlist">
-            <li id="home" class="active-link"><a href="#home">Home</a></li>
-            <li><a href="#container_our_product">Products</a></li>
-            <li><a href="#our-services">Services</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <!-- <li><a href="#">Contact Us</a></li> -->
-          </ul>
-        </div>
-      </nav>
+        <ul class="nav_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Services</a></li>
+          <!-- <li><a href="#container_our_product">Productss</a></li> -->
+          <!-- <li><a href="#about-us">About</a></li>    -->
+          <li><a href="#blog.html">blogs</a></li>
+          <li style="text-align: center;"><a class="btn" href="index.html">Price</a></li>
+        </ul>
+        <div class="toggle btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+
+    <!------floating cta fixed buttons------->    
+   <div  class="cta-side">
+      <ul class="float-contact">
+        <!-- <i class="fa-solid fa-arrow-left"></i> -->
+      <!-- <i class="fa-solid fa-arrow-right"></i> -->
+
+        <li class="whatsapp-click">
+          <a href="https://api.whatsapp.com/send?phone=+2347062080855&text=Hello, can we chat on how I can get estimate for my roofing materials?">
+          <i class="fa-brands fa-whatsapp"></i><br>
+          <span>WhatsApp</span>
+          </a>
+        </li>
+        
+        <li class="call-us">
+          <a href="tel:07062080855">
+          <i class="fa-solid fa-phone"></i><br>
+          <span>Call</span>
+        </li>
+      </a>
+        <li class="email-us">
+          <a href="mailto:oyebolang@gmail.com">
+          <i class="fa-solid fa-envelope"></i><br>
+          <span>Email</span>
+        </a>
+        </li>
+         <li class="enquiry-mobile">
+          <a href="#form-section">
+          <i class="fa-solid fa-envelope"></i><br>
+          <span>Form</span>
+        </a>
+        </li>
+        <li class="enquiry-mobile">
+          <a href="sms:07062080855">
+          <i class="fa-regular fa-comment"></i><br> 
+          <span>SMS</span>
+        </a>
+        </li>
+        <li style="display: none;" class="enquiry-desktop">
+          <a href="#form-section">
+          <i class="fa-regular fa-comment"></i><br> 
+          <span>enquiry Form</span>
+        </a>
+        </li>
+      </ul>
+  </div>
+  <!-- end cta -->
+    </header>
+
       <!-- <main> -->
         <div class="hero">
             <p>Our company specializes in Aluminum coil/Corrugated Aluminum Roofing/Stone Tiles/Roofing Accessories.
             </p>
           </div> 
           
-          <a style="margin: 1rem; text-decoration: none; font-size: 1.25rem; background: #dd0004; z-index: 123; color: #fff; padding: 0.25em 0.75em; position: sticky; top: 16%; border-radius: 0.35rem;" href="index.html">Home</a>
+          <!-- <a style="margin: 1rem; text-decoration: none; font-size: 1.25rem; background: #dd0004; z-index: 123; color: #fff; padding: 0.25em 0.75em; position: sticky; top: 16%; border-radius: 0.35rem;" href="index.html">Home</a> -->
       
           <section>
             <div class="product-spec">
@@ -157,6 +192,6 @@
               for any purpose. powered by: CreativeDad web Consult. Ent.
             </p>
           </footer>
-    
+<script src="script.js"></script>    
 </body>
 </html>

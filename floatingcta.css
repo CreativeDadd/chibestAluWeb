@@ -13,13 +13,14 @@
 .float-contact {
     list-style: none;
     position: fixed;
-    top: 45%;
+    top: 91%;
     right: 0;
-    margin: 1rem;
+    /* margin: 1rem; */
     z-index: 188;
-    background-color: #0000009f;
-    padding: 00.85rem;
+    /* background-color: #0000009f; */
+    /* padding: 00.85rem; */
     border-radius: 00.35em;
+    display: none;
 }
 
 
@@ -29,7 +30,7 @@
 }
 
 .float-contact li:hover{
-    background: #000;
+    /* background: #000; */
     border: #fff solid 1px;
     border-radius: 0.25em;
     transition: 0.52s;
@@ -99,18 +100,16 @@
     
     .float-contact {
         position: fixed;
-        top: 90%;
         display: flex;
         flex-wrap: wrap;
         flex: 1;
         width: 100%;
-        height: 2em;
-        margin: auto; 
+        height: 1.5em;
+        /* margin: auto;  */
         z-index: 188; 
     }
 
     .call-us a {
-    /* background: #f06; */
     margin-bottom: 0.25rem;
     display: block;
 }
