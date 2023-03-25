@@ -1,4 +1,4 @@
-var slideIndex = 1;
+// var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -9,7 +9,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+// function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("img-wrap");
   var dots = document.getElementsByClassName("dot");

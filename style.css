@@ -106,10 +106,13 @@ header {
 .logo-img {
     width: 2em;
     height: 2em;
+    margin-top: 1em;
+    
 }
 
 nav a {
     line-height: 52px;
+
 }
 
 nav a h3 {
@@ -164,6 +167,7 @@ nav a h3 {
     overflow: hidden;
     border-radius: 4px;
     bottom: 10%;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.9);
 
   }
    .img-wrap {
@@ -173,11 +177,19 @@ nav a h3 {
     width: 100%;
     height: 100%;
     margin: auto;
-    box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.4);
   }
   .img-wrap.active{
     display: flex;
   }
+  .img-wrap img {
+      border-radius: 4px;
+      animation: show 2s ease-in-out ;
+  }
+
+  .mobile {
+      display: none;
+  }
+  
 
   @keyframes show {
       from{
@@ -226,7 +238,7 @@ nav a h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin: 3em auto 2em auto;
 }
 b {
@@ -255,8 +267,9 @@ b {
 
 .price-section .container_our_prices{
   width: 30%;
-  height: 460px;
-  border: var(--primary-color) 1px solid;
+  height: 490px;
+  background: #f7f7f7;
+  /* border: var(--primary-color) 1px solid; */
   border-radius: 8px;
 
 }
@@ -272,6 +285,25 @@ b {
   line-height: 2em;
 }
 
+#price-card a {
+    color: var(--usecase-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#price-card{
+    margin: 0.25rem 0 0.75 0;
+    border:  none;
+    outline: none;
+    width: 8rem;
+    height: 2.25rem;
+    background: #d10000;
+}
+
+#price-card:hover {
+    background: #444;
+    color: #fff;
+}
 /* //////// PRICE SECTION ENDS  ////////// */
 
 
@@ -775,7 +807,10 @@ input {
 
 
 
- @media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 968px) {
+     #dil {
+         display: none;
+     }
     /* Hide the menu on mobile */
     .nav_menu {
       display: none;
@@ -822,44 +857,6 @@ input {
       text-decoration: none;
       font-size: 18px;
     }
-  }
-
- 
-
- 
-@media only screen and (max-width: 768px){
-    
-    /* .toggle {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2.5em;
-        height: 2.25em;
-        cursor: pointer;
-    }
-    
-    .toggle .fa-bars {
-        font-size: 2rem;
-        color: var(--usecase-color);
-        cursor: pointer;
-    }
-
-    .nav_menu{ 
-        display: none;
-    }
-
-    .navlistdiv ul {
-        position: absolute;
-        background: rgb(25, 55, 95);
-        flex-direction: column;
-        width: 100%;
-    }
-    .active {
-        display: flex;
-    } */
-
-    /* hero */
     
     .hero-section {
         width: 100%;
@@ -904,8 +901,12 @@ input {
 
   .capt {
     width: 35%;
-    text-align: center;
   }
+
+  .pc {
+      display: none;
+  }
+  .mobile{ display: block;}
   /* ////////////////HERO SLIDE ENDS///////////////// */
 
 
@@ -921,7 +922,7 @@ input {
   .price-main {
       justify-content: center;
       width: 100%;
-      gap: 15px;
+      gap: 35px;
       justify-content: center;
   }
   .price-section h3 {
@@ -931,26 +932,25 @@ input {
       color: var(--usecase-color);
   }
   .price-section .nego {
-      width: 70%;
+      width: 100%;
       margin: 0 auto 0.6em auto;
-      box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.9);
+      /* box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.9); */
       background: #EDB518;
        font-weight: bold; 
        text-align: center; 
        font-size: 1.25em; 
-       padding: 1em;
+       padding: 0.75em;
     }
 
 .price-section .container_our_prices{
     display: flex;
     width: 90%;
-    height: 250px;
+    height: 290px;
     margin-bottom: 1.5em;
     border-radius: 0 0 0 0;
     border: none;
     box-shadow: 10px 10px 15px var(--secondary-colorlight);
     border-radius: 0 0 15px 0;
-     
 }
 
  .price-section .container_our_prices img {
@@ -970,10 +970,8 @@ input {
  .price_details h4, .price_details p{
      /* color: var(--lime-green); */
  }
- b{
-     /* color: darkolivegreen; */
-     /* color: var(--design-color); */
- }
+ 
+
 
   /* ////////////////PRICE SECTION ENDS///////////////// */
 

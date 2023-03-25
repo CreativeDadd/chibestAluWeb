@@ -1,3 +1,18 @@
+:root {
+    --primary-color: #79031D;
+    --primary-colorlight: rgba(121, 3, 29, 0.25);
+    --secondary-color: #000407;
+    --secondary-colorlight: rgba(0, 4, 7, 0.5);
+    --usecase-color: #f5f7f7;
+    --design-color: #EDB518;
+    --font-bai: 'Bai Jamjuree', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-satisfy: 'Satisfy', cursive;
+    --lime-green: rgb(59, 250, 59);
+    --blue-spec: #3a3aee;
+    
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,20 +21,20 @@
 
 
 .hero {
-    margin-top: 100px;
+    margin-top: 60px;
     width: 100%;
-    height: 5rem;
+    height: 7rem;
     padding: 0.75em;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.26)  ), url("images/lngroof-span-green.png");
+    background-image: linear-gradient(to right, #1a1aff99,  #1a1aff99/* rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)*/), url("images/lngroof-span-green.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.hero p {
-    color: #fff;
-    font-weight: 700;
-    
+.hero-h3 {
+    color: var(--usecase-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
 }
 
 .product-spec {
@@ -44,7 +59,13 @@
     font-weight: 700;
 }
 
-.spec-dtl button{
+#product-card a {
+    color: var(--usecase-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#product-card{
     margin: 1rem 0;
     border:  none;
     outline: none;
@@ -53,18 +74,14 @@
     background: #d10000;
 }
 
-.spec-dtl button:hover{
+#product-card:hover {
     background: #444;
     color: #fff;
 }
 
 
 
-.spec-dtl button a {
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: none;
-}
+
 
 .more p {
     line-height: 1.5rem;
@@ -119,94 +136,15 @@ footer {
 
 /* ========================================== */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 970px) {
+    #dil {
+        display: none;
+    }
+   
     body {
         /* display: none; */
         font-family: 'Ubuntu', sans-serif;
     }
-
-    .menu-togle {
-        position: absolute;
-        top: 1em;
-        right: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 1.1em;
-        height: 1.1em;
-        cursor: pointer;
-    }
-    
-    #menu_x {
-        display: none;
-        position: absolute;
-        top: 1em;
-        right: 2rem;
-        width: 1.1em;
-        height: 1.1em;
-        font-size: 1.5rem;
-        color: #fff;
-        cursor: pointer;
-
-    }
-
-    .menu-togle span {
-        padding: 0.25em;
-        padding: 0.1em;
-        margin-top: 0.5em;
-        width: 2em;
-        height: 0.3em;
-        background: #fff;
-        z-index: 999;
-    } 
-    
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-
-    .navlist{ 
-        display: none;
-    }
-
-    .navlistdiv ul {
-        position: absolute;
-        background: rgb(25, 55, 95);
-        flex-direction: column;
-        width: 100%;
-    }
-    .active {
-        display: flex;
-    }
-
-    .navlistdiv ul li {
-        margin-top: 2em 0;
-        text-align: center;
-        color: #111;
-        padding: 1em;
-
-
-    }
-
-    .navlistdiv ul li a {
-    color: #fff;
-    }
-
-    .navlistdiv ul li:hover{
-        background: #000;
-        /* background: rgb(26, 7, 124); */
-        display: block;
-        width: 100%;
-        font-size: 1.05rem;
-    }
-
-
-    .top_contact {
-        display: none;
-    }
-
 
 
     .product-spec img {

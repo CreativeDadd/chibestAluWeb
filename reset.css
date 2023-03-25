@@ -24,30 +24,44 @@ ul {
     list-style: none;
 }
 
-/* h2, h3, h4, h5, h6, h1 {
-    margin: 1em 0;
-} */
-/* border-radius */
+
 .card-br {
     border-radius: 7.5px;
 }
 
 .btn a {
     color: var(--secondary-color);
-    font-weight: bold;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.3px;
 
 
 }
 
 .btn {
-    width: 170px;
-    /* height: 35px; */
+    width: 7.5rem;
+    height: auto;
     border: none;
     background: #EDB518;
-    padding: 6px 16px;
+    padding: 10px 15px;
     margin-top: 12px;
     border-radius: 4px;
 }
+
+.btn-price a {
+    color: var(--design-color);
+    letter-spacing: 1.3px;
+    transition: all 2s;
+}
+
+
+.btn-price {
+    width: 7.5rem;
+    height: auto;
+    background: transparent;
+    border: #EDB518 solid 2px;
+    padding: 8px 18px;
+    margin-top: 12px;
+    border-radius: 4px;
+}
+
 
 

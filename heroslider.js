@@ -20,7 +20,7 @@ function showSlides() {
   // display the current slide
   slides[slideIndex-1].style.display = "flex";
   // call the showSlides function again after 5 seconds
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 9000);
 }
 
 // define the plusSlides function to move to the previous or next slide

@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="prd-details.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Produccts</title>
 
     <style>
@@ -116,54 +117,29 @@
     
 </head>
 <body>
-  <div class="contacts"><a href="tel:"></a></div>
-    <!-- color theme: "blue, red, white" -->
+  <header>
     <nav class="navbar" id="nav-bar">
-        <a class="logo-anchor" href="index.html"
-          ><img
-            src="images\large logo.png"
-            alt="logo-img"
-            id="logo-img"
-            class="logo-img"
-          />
-          <h4 class="logo-name"  style="color: #fff">
-            <span Style="color: #DD0004; font-size: 1.3rem;">DonJiokeson</span
-            >Investment Ltd.
-          </h4>
-        </a>
-        <!-- <a class="logo-1" href="#home"><span class="span-1 span-logo"></span><span class="span-2 span-logo"></span><span class="span-d">D</span>IL</a> -->
-        <!-- armburger menu -->
-        <div id="menu-icon" class="menu-togle menu-close" >
-          <span class="bar bar1"></span>
-          <span class="bar bar2"></span>
-          <span class="bar bar3"></span>
-        </div>
-      <div id="menu_x">X</div>
-
-  
-        <div class="navlistdiv">
-          <ul id="nav-ul" class="navlist">
-            <li id="home" class="active-link"><a href="index.html">Home</a></li>
-            <li><a href="#container_our_product">Products</a></li>
-            <li><a href="#our-services">Services</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <!-- <li><a href="#">Contact Us</a></li> -->
-          </ul>
-        </div>
-      </nav>
+      <a class="logo-anchor" href="index.html">
+        <img src="images\large logo.png" alt="logo-img" id="logo-img" class="logo-img"/>
+        <!-- <h3 id="dil">DonJiokeson Investment Ltd.</h3> -->
+      </a>
+      <ul class="nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="index.html">Productss</a></li>
+        <li><a href="index.html">About</a></li>   
+        <li><a href="#blog.html">blogs</a></li>
+      </ul>
+      <div class="toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
       <!-- <main> -->
         <div class="hero">
-            <p>Our company specializes in Aluminum coil/Corrugated Aluminum Roofing/Stone Tiles/Roofing Accessories.
-            </p>
+            <h3  class="hero-h3">Our company specializes in Aluminum coil/Corrugated Aluminum Roofing/Stone Tiles/Roofing Accessories.
+            </h3>
           </div> 
           
-          <a style="margin: 1rem; text-decoration: none; font-size: 1.25rem; background: #dd0004; z-index: 123; color: #fff; padding: 0.25em 0.75em; position: sticky; top: 16%; border-radius: 0.35rem;" href="index.html">Home</a>
-
-
-
-        <!-- tttttttttttttttttttttttttttttttttttttttttttttttt -->
-         <!-- Container for the image gallery -->
+          <!-- Container for the image gallery -->
 <div class="container">
 
   <!-- Full-width images with number text -->
@@ -229,7 +205,6 @@
     
   </div>
 </div> 
-        <!-- eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
       
           <section>
             <div class="product-spec">
@@ -242,14 +217,14 @@
                     Plaster of Paris  ceilings are awesomely durable and can resist wears and tears for many years. We apply POP to mesh in order to keep the ceilling very strong and durables. POP is more affordable than gypsum boards and so many other ceilling decoration materials that offer a closer easthetic look . We have from simple to sophisticated, intricate designs of POP that will offer awesome beauty to your building projects. 
                     <br><div style="background: rgb(34, 34, 235); padding: 1rem; color: #fff;">
                     The good thing about this is that our POP designs, castinng and installations are very affordable. While you are thinking about your ceiling and its cost, don't fail to put a call across to our company, the cost may just be under your financial capability, why go for something lower when you can easily grab a design from us and thank goodness you called us for INQUIRIES: <br> 
-                    <button><a href="https://api.whatsapp.com/send?phone=+2347062080855&text=Hello, can we chat on how I can get more best deals and best POP design for my building?">INQUIRY</a></button>
+                    <button id="product-card"><a href="https://api.whatsapp.com/send?phone=+2347062080855&text=Hello, can we chat on how I can get more best deals and best POP design for my building?">INQUIRY</a></button>
                     </div>
                     POP ceilings are available in a wide range of colors, styles, and sizes to make your living room appear larger and more luxurious, with styles ranging from modern to complicated classic.
                     
                     Before we begin design, we check that the distance between the floor and the ceiling slab level is sufficient to support every light and intricate parts of the ceilling . Our POP designs are determined by the lighting plan, which we must determine ahead of time.
                     
                     Here are 20 eye-catching ceiling design ideas for your living room to get you started:</p>
-                  <button><a href="">INQUIRY</a></button>
+                  <button id="product-card"><a href="https://api.whatsapp.com/send?phone=+2347062080855&text=Hello, can we chat on how I can get more best deals and best POP design for my building?">INQUIRY</a></button>
             </div>
             <!-- <div class="more">
               <h2>Why you may consider The Corrugated Aluminum Step Tiles for your Projects</h2>
@@ -352,5 +327,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 } 
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
