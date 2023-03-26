@@ -70,7 +70,7 @@ modalRight.addEventListener( 'click', (event) =>{
   event.preventDefault()
   floatCont.classList.toggle("actives");
   modalRight.style.display = 'none';
-  modalLeft.style.marginTop = '31rem';
+  modalLeft.style.marginTop = '30rem';
 })
 
 modalLeft.onclick = () => {
@@ -80,13 +80,12 @@ modalLeft.onclick = () => {
 
 }
 
-document.addEventListener('click', (event) => {
-  if (!floatCont.contains(event.target)  && !modalRight.contains(event.target) && !modalLeft.contains(event.target)){
-  floatCont.classList.remove("actives");
-  modalRight.style.display = 'block'
-
-  }
-})
+// document.addEventListener('click', (event) => {
+//   if (!floatCont.contains(event.target)  && !modalRight.contains(event.target) && !modalLeft.contains(event.target)){
+//   floatCont.classList.remove("actives");
+//   modalRight.style.display = 'block'
+//   }
+// })
 
 
 
