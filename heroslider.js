@@ -54,6 +54,43 @@ document.querySelector(".next").addEventListener("click", function() {
   plusSlides(1);
 });
 
+
+/************Floating modal***************/
+
+
+const modalRight = document.getElementById("f-modal-right");
+
+const modalLeft = document.getElementById("f-modal-left");
+
+const floatCont = document.querySelector(".float-contact")
+
+
+
+modalRight.addEventListener( 'click', (event) =>{
+  event.preventDefault()
+  floatCont.classList.toggle("actives");
+  modalRight.style.display = 'none';
+  modalLeft.style.marginTop = '31rem';
+})
+
+modalLeft.onclick = () => {
+  floatCont.classList.toggle("actives");
+  modalRight.style.display = 'block'
+  modalLeft.classList.add('active');    
+
+}
+
+document.addEventListener('click', (event) => {
+  if (!floatCont.contains(event.target)  && !modalRight.contains(event.target) && !modalLeft.contains(event.target)){
+  floatCont.classList.remove("actives");
+  modalRight.style.display = 'block'
+
+  }
+})
+
+
+
+
 // // Set the slide index to 1
 // var slideIndex = 1;
 
